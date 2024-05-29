@@ -4,3 +4,63 @@
   text-decoration: none;
   word-break: break-word;
 }
+
+.button--light {
+  &:focus {
+    &::after {
+      transform: rotate(45deg);
+
+      background-color: $color-default-white;
+    }
+  }
+
+  &:hover,
+  &:active {
+    color: $color-default-white;
+    background-color: $color-cerulean-blue;
+
+    &::before {
+      background-color: $color-default-white;
+    }
+
+    &::after {
+      transform: rotate(45deg);
+
+      background-color: $color-cerulean-blue;
+    }
+  }
+
+  &:active {
+    color: rgba($color-default-white, 0.7);
+
+    &::before {
+      background-color: $color-default-white;
+    }
+
+    &::after {
+      transform: rotate(45deg);
+
+      background-color: rgba($color-cerulean-blue, 0.7);
+    }
+  }
+
+  &:disabled,
+  &.is-disabled {
+    pointer-events: none;
+    color: $color-mischka;
+    border-color: $color-mischka;
+
+    &::before {
+      color: $color-default-white;
+      background-color: $color-mischka;
+    }
+
+    &:focus {
+      outline: none;
+
+      &::after {
+        transform: none;
+      }
+    }
+  }
+}

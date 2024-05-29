@@ -1,12 +1,11 @@
 .header {
   position: fixed;
+  z-index: 2;
 
   width: 100%;
 }
 
 .header__wrapper {
-  z-index: 2;
-
   padding: 20px 15px;
 
   background-color: transparent;
@@ -100,8 +99,10 @@
 .header__list--dropdown.is-open {
   max-height: 200px;
   padding-bottom: 4px;
-  opacity: 1;
+
   transform: translateY(0);
+
+  opacity: 1;
 }
 
 .header__item {
@@ -213,10 +214,14 @@
 
   width: 52px;
   height: 52px;
-  padding-top: 2px;
+  padding-top: 1px;
 
   border-radius: 50%;
   background-color: $color-default-white;
+
+  @media(min-width: $tablet-width) {
+    padding-top: 2px;
+  }
 }
 
 .header__button {
@@ -228,7 +233,7 @@
   z-index: 2;
 
   min-width: 136px;
-  min-height: 56px;
+  min-height: 54px;
   padding: 2px 3px 3px 20px;
 
   transition: width 0.3s ease-in;
@@ -241,10 +246,14 @@
   border-radius: 30px;
   background-color: $color-default-white;
 
+  @media(min-width: $tablet-width) {
+    min-height: 56px;
+  }
+
   &::before {
     position: absolute;
     z-index: 2;
-    top: 23px;
+    top: 22px;
     right: 19px;
 
     width: 16px;
@@ -255,12 +264,16 @@
     background-image: url("/__spritemap#sprite-burger-close-view");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media(min-width: $tablet-width) {
+      top: 23px;
+    }
   }
 
   &::after {
     position: absolute;
     z-index: 1;
-    top: 4px;
+    top: 3px;
     right: 4px;
 
     width: 46px;
@@ -270,16 +283,23 @@
 
     border-radius: 50%;
     background-color: $color-cerulean-blue;
+
+    @media(min-width: $tablet-width) {
+      top: 4px;
+    }
   }
 }
 
 .header__overlay.is-open {
-  display: block;
   position: absolute;
-  width: 100vw;
-  height: 120vh;
+  z-index: 1;
   top: 0;
   left: 0;
+
+  display: block;
+
+  width: 100vw;
+  height: 120vh;
+
   background-color: $color-black-pearl-40;
-  z-index: 1;
 }
