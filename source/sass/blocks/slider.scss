@@ -183,7 +183,9 @@
   @media(min-width: $tablet-width) {
     font-size: $font-line-size-rat;
     line-height: $font-line-size-rat;
+
     display: inline-block;
+
     padding: 19px 80px 21px 30px;
   }
 
@@ -237,7 +239,6 @@
     @media(min-width: $tablet-width) {
       top: 23px;
       right: 23px;
-
     }
 
     @media(min-width: $desktop-width) {
@@ -257,9 +258,8 @@
 
   @media(min-width: $tablet-width) {
     padding: 0;
-    // padding-top: 20px;
-    border-radius: 0;
 
+    border-radius: 0;
     background-color: transparent;
   }
 
@@ -402,6 +402,7 @@
 }
 
 .slider__pagination .slider__pagination-bullet.is-active {
+  border-color: $color-endeavour;
   background-color: $color-endeavour;
 }
 
