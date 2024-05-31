@@ -212,8 +212,10 @@
 
           <div class="about__content-wrapper">
             <h3>Наша цель</h3>
-            <p>Наша деятельность направлена на&nbsp;повышение квалификации молодых специалистов на ранних и средних стадиях
-              карьеры, предоставляя им&nbsp;инструменты для решения сложных проблем, с&nbsp;которыми сталкиваются в мире. Цель
+            <p>Наша деятельность направлена на&nbsp;повышение квалификации молодых специалистов на ранних и средних
+              стадиях
+              карьеры, предоставляя им&nbsp;инструменты для решения сложных проблем, с&nbsp;которыми сталкиваются в
+              мире. Цель
               центра — наделить этих людей способностью инициировать значимые изменения.</p>
 
             <a class="about__button button button--light" href="#">Подробнее о проекте</a>
@@ -241,6 +243,57 @@
             <p>грант всем участникам для комфортного прохождения программы</p>
           </li>
         </ul>
+      </div>
+
+      <div class="about__modal modal">
+        <button class="modal__close-button" type="button">
+          <span class="visually-hidden">Закрыть окно.</span>
+        </button>
+        <h2 class="modal__title">Напишите нам</h2>
+        <p class="modal__description">Оставьте ваши контакты, <span>если у вас остались вопросы –</span>
+          мы на них ответим!</p>
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+
+          <label class="modal__label" for="name">
+            <input class="modal__field" type="text" name="name" id="name" required>
+            <span class="modal__label-text">Имя</span>
+          </label>
+
+          <label class="modal__label" for="phone">
+            <input class="modal__field" type="tel" name="phone" id="phone" required>
+            <span class="modal__label-text">Телефон</span>
+          </label>
+
+          <label class="modal__label" for="city">
+            <div class="modal__select-container">
+              <select class="modal__select" id="city">
+                <option class="modal__option" value="" tabindex="0" aria-selected="false">
+                </option>
+                <option class="modal__option" value="Санкт-Петербург" tabindex="0" aria-selected="false">
+                  Санкт-Петербург
+                </option>
+                <option class="modal__option" value="Санкт-Петербург" tabindex="0" aria-selected="false">
+                  Санкт-Петербург
+                </option>
+                <option class="modal__option" value="Санкт-Петербург" tabindex="0" aria-selected="false">
+                  Санкт-Петербург
+                </option>
+                <option class="modal__option" value="Санкт-Петербург" tabindex="0" aria-selected="false">
+                  Санкт-Петербург
+                </option>
+              </select>
+            </div>
+            <span class="modal__label-text">Выберите город</span>
+          </label>
+          <label class="modal__checkbox" for="permission">
+            <input class="modal__checkbox-field visually-hidden" type="checkbox" name="permission" id="permission"
+              required>
+            <span class="modal__checkbox-check"></span>
+            <span class="modal__checkbox-text">Я согласен на обработку моих персональных данных</span>
+          </label>
+
+          <button class="modal__submit-button button button--light" type="submit">Отправить</button>
+        </form>
       </div>
     </section>
   </main>
