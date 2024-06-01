@@ -47,6 +47,7 @@
   &:disabled,
   &.is-disabled {
     pointer-events: none;
+
     color: $color-mischka;
     border-color: $color-mischka;
 
@@ -62,5 +63,98 @@
         transform: none;
       }
     }
+  }
+}
+
+.button--swiper {
+  width: 22px;
+  height: 22px;
+position: relative;
+  border: none;
+  background-color: transparent;
+
+  &::after {
+    position: relative;
+    top: 1px;
+    left: 0;
+
+    display: block;
+
+    width: 8px;
+    height: 8px;
+
+    content: "";
+    transform: rotate(45deg);
+
+    background-color: $color-cerulean-blue;
+
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    mask-image: url("/__spritemap#sprite-button-arrow-view");
+  }
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: 1px;
+    left: 0;
+
+    display: block;
+
+    width: 22px;
+    height: 22px;
+
+    content: "";
+
+    opacity: 0;
+    border-radius: 30px;
+    background-color: $color-default-white;
+  }
+
+  &:hover::after {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    outline: none;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.7;
+    }
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  &:disabled,
+  &--disabled {
+    &:hover::after {
+      opacity: 1;
+    }
+
+    &::after {
+      background-color: $color-mischka;
+    }
+
+    &::before {
+      opacity: 0;
+    }
+
+  }
+}
+
+.button--prev {
+  &::after {
+    left: 2px;
+
+    transform: rotate(225deg);
   }
 }
