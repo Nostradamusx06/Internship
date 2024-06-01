@@ -1,0 +1,446 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.6);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+
+  width: 260px;
+  margin: 0 auto;
+  padding: 38px 15px 40px;
+  border-radius: 16px;
+  background-color: $color-default-white;
+
+  @media(min-width: $tablet-width) {
+    width: 350px;
+    padding: 55px 80px 58px;
+  }
+
+  @media(min-width: $desktop-width) {
+    padding: 53px 80px 60px;
+  }
+}
+
+.modal.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+
+}
+
+.modal__title {
+  font-size: $font-line-size-fox;
+  font-weight: $regular;
+  line-height: $font-line-size-fox;
+
+  margin: 0;
+
+  text-align: center;
+
+  color: $color-cerulean-blue;
+  padding-bottom: 11px;
+
+  @media(min-width: $tablet-width) {
+    font-size: $font-line-size-bear;
+    line-height: $font-line-size-bear;
+    padding-bottom: 17px;
+  }
+
+  @media(min-width: $desktop-width) {
+    font-size: $font-line-size-alligator;
+    line-height: $font-line-size-rhino;
+
+    padding-bottom: 14px;
+  }
+}
+
+.modal__description {
+  font-size: $font-line-size-rat;
+  font-weight: $regular;
+  line-height: $font-line-size-dog;
+
+  margin: 0 auto;
+
+  text-align: center;
+  width: 200px;
+
+  span {
+    white-space: nowrap;
+  }
+
+  @media(min-width: $tablet-width) {
+    font-size: $font-line-size-rabbit;
+    width: auto;
+
+    span {
+      white-space: wrap;
+    }
+  }
+
+  @media(min-width: $desktop-width) {
+    line-height: $font-line-size-moose;
+
+    width: 350px;
+  }
+
+}
+
+.modal__label {
+  font-size: $font-line-size-rat;
+  font-weight: $regular;
+  line-height: $font-line-size-rat;
+  display: flex;
+  flex-direction: column-reverse;
+  opacity: 0.8;
+
+  @media(min-width: $tablet-width) {
+    line-height: $font-line-size-dog;
+  }
+
+  @media(min-width: $desktop-width) {
+    line-height: $font-line-size-fox;
+  }
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  padding-top: 26px;
+  width: 260px;
+
+  @media(min-width: $tablet-width) {
+    width: 350px;
+    padding-top: 30px;
+  }
+}
+
+.modal__close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+  background-image: url("/__spritemap#sprite-modal-close-view");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media(min-width: $tablet-width) {
+    top: 30px;
+    right: 30px;
+
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.modal__field {
+  height: 40px;
+  padding-left: 25px;
+  border: 1px solid rgba($color-charcoal, 0.3);
+  border-radius: 8px;
+
+  margin-bottom: 15px;
+  margin-top: 8px;
+
+  @media(min-width: $tablet-width) {
+    height: 46px;
+    margin-bottom: 20px;
+    margin-top: 12px;
+  }
+}
+
+.modal__field:not(:invalid) {
+
+  &:hover,
+  &:active,
+  &:focus-visible {
+    opacity: 1;
+    outline: none;
+  }
+
+}
+
+.modal__field:disabled {
+  background-color: rgba($color-mischka, 0.2);
+  border-color: rgba($color-mischka, 0.5);
+  user-select: none;
+
+}
+
+.modal__field:disabled+.modal__label-text {
+  color: rgba($color-mischka, 0.6);
+}
+
+.modal__select-container {
+  position: relative;
+
+  ~.modal__label-text {
+    margin-bottom: 8px;
+
+    @media(min-width: $tablet-width) {
+      margin-bottom: 13px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    z-index: 2;
+    top: 14px;
+    right: 20px;
+
+    width: 16px;
+    height: 16px;
+
+    content: "";
+    transform: rotate(180deg);
+
+    background-color: $color-charcoal;
+
+    mask-image: url("/__spritemap#sprite-arrow-view");
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    @media(min-width: $tablet-width) {
+      top: 17px;
+    }
+  }
+}
+
+.modal__select {
+  width: 260px;
+  height: 44px;
+  padding-left: 20px;
+  border: 1px solid rgba($color-charcoal, 0.3);
+  border-radius: 8px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  @media(min-width: $tablet-width) {
+    width: 350px;
+    height: 50px;
+  }
+}
+
+.modal__checkbox {
+  font-size: $font-line-size-mouse;
+  font-weight: $regular;
+  line-height: $font-line-size-rat;
+
+  position: relative;
+
+  display: flex;
+  justify-content: flex-end;
+
+  width: 333px;
+  margin-top: 20px;
+
+  opacity: 0.9;
+  width: 257px;
+  margin-top: 11px;
+  padding-left: 30px;
+
+  @media(min-width: $tablet-width) {
+    line-height: $font-line-size-mouse;
+    width: 333px;
+    margin-top: 20px;
+    padding: 0;
+  }
+}
+
+.modal__checkbox-text {
+  padding-top: 4px;
+  cursor: pointer;
+}
+
+.modal__checkbox-check {
+  position: absolute;
+  top: 8px;
+  left: 0;
+
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  opacity: 0.7;
+  border: 1px solid $color-cerulean-blue;
+  border-radius: 2px;
+
+  @media(min-width: $tablet-width) {
+    top: 0;
+  }
+}
+
+.modal__checkbox-field:checked+.modal__checkbox-check {
+  background-color: $color-cerulean-blue;
+  opacity: 1;
+
+
+  &::after {
+    position: absolute;
+    z-index: 2;
+    top: 4px;
+    right: 4px;
+    content: "";
+    width: 10px;
+    height: 9px;
+    background-color: $color-default-white;
+    mask-image: url("/__spritemap#sprite-check-view");
+
+    mask-repeat: no-repeat;
+
+  }
+}
+
+.modal__checkbox-field:not(:checked):hover:not(:invalid)+.modal__checkbox-check,
+.modal__checkbox-field:not(:checked):focus-visible:not(:invalid)+.modal__checkbox-check {
+  opacity: 1;
+}
+
+.modal__checkbox-field:checked:hover:not(:invalid)+.modal__checkbox-check,
+.modal__checkbox-field:checked:focus-visible:not(:invalid)+.modal__checkbox-check {
+  opacity: 1;
+  background-color: $color-default-white;
+
+  &::after {
+    background-color: $color-cerulean-blue;
+  }
+}
+
+.modal__checkbox-field:disabled+.modal__checkbox-check,
+.modal__checkbox-field:disabled:hover+.modal__checkbox-check {
+  border: 1px solid $color-cerulean-blue;
+  opacity: 0.6;
+  background-color: rgba($color-cerulean-blue, 0.6);
+
+  &::after {
+    display: none;
+  }
+}
+
+.modal__checkbox-field:checked:disabled+.modal__checkbox-check,
+.modal__checkbox-field:checked:disabled:hover+.modal__checkbox-check {
+  border: 1px solid $color-mischka;
+
+  background-color: rgba($color-mischka, 0.8);
+
+  &::after {
+    opacity: 0.8;
+    display: block;
+    background-color: $color-default-white;
+  }
+}
+
+.modal__checkbox-field:disabled~.modal__checkbox-text,
+.modal__checkbox-field:not(:checked):disabled:hover~.modal__checkbox-text {
+  color: $color-mischka;
+}
+
+.modal__error .modal__field:invalid {
+
+  border-color: rgba($color-wild-watermelon, 0.7);
+  background-color: rgba($color-wild-watermelon, 0.2);
+}
+
+.modal__error .modal__checkbox-field:invalid+.modal__checkbox-check {
+  border-color: rgba($color-wild-watermelon, 0.7);
+  background-color: rgba($color-wild-watermelon, 0.2);
+}
+
+.modal__submit-button {
+  font-size: $font-line-size-mouse;
+  font-weight: $medium;
+  line-height: $font-line-size-mouse;
+
+  position: relative;
+
+  padding: 13px 58px 14.5px 20px;
+
+  letter-spacing: .28px;
+  text-transform: uppercase;
+
+  color: $color-cerulean-blue;
+  border: 1px solid $color-cerulean-blue;
+  border-radius: 30px;
+  background-color: $color-default-white;
+  margin-top: 26px;
+
+  @media(min-width: $tablet-width) {
+    font-size: $font-line-size-rat;
+    line-height: $font-line-size-rat;
+
+    display: inline-block;
+
+    padding: 19px 79px 20px 30px;
+    width: 195px;
+    margin: 0 auto;
+    margin-top: 34px;
+  }
+
+  @media(min-width: $desktop-width) {
+    width: 194px;
+
+    padding: 19px 77px 19px 27px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+
+    width: 34px;
+    height: 34px;
+
+    content: "";
+
+    border-radius: 44px;
+    background-color: $color-cerulean-blue;
+
+    @media(min-width: $tablet-width) {
+      top: 3px;
+      right: 3px;
+
+      width: 46px;
+      height: 46px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+
+    width: 8px;
+    height: 8px;
+
+    content: "";
+
+    background-color: $color-default-white;
+
+    mask-image: url("/__spritemap#sprite-button-arrow-view");
+    mask-repeat: no-repeat;
+    mask-size: cover;
+
+    @media(min-width: $tablet-width) {
+      top: 21px;
+      right: 21px;
+
+      width: 10px;
+      height: 10px;
+    }
+  }
+}

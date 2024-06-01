@@ -145,7 +145,6 @@
   margin: 0;
   padding: 0 12px 15px 14px;
 
-  color: $color-charcoal;
   border-radius: 0 0 16px;
   background-color: $color-default-white;
 
@@ -421,6 +420,8 @@
 }
 
 .slider__background-img {
+  display: block;
+
   width: 100%;
   height: 100%;
 
