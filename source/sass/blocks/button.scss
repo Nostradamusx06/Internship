@@ -6,7 +6,7 @@
 }
 
 .button--light {
-  &:focus {
+  &:focus-visible {
     &::after {
       transform: rotate(45deg);
 
@@ -56,7 +56,7 @@
       background-color: $color-mischka;
     }
 
-    &:focus {
+    &:focus-visible {
       outline: none;
 
       &::after {
@@ -116,7 +116,7 @@ position: relative;
     opacity: 0.7;
   }
 
-  &:focus {
+  &:focus-visible {
     outline: none;
 
     &::before {
