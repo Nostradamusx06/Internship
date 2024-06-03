@@ -392,7 +392,7 @@
 
   &:hover {
     border-color: $color-default-white;
-    background-color: rgba($color-cerulean-blue, 0.7);
+    background-color: $color-cerulean-blue-70;
   }
 
   &:focus-within {
