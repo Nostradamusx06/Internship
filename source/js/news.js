@@ -1,10 +1,12 @@
 import Swiper from 'swiper';
 import { Grid, Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
 
 (function () {
   const initNewsSwiper = () => {
     const swiperNews = new Swiper('.news__swiper', {
       autoHeight: true,
+
       modules: [Grid, Navigation, Pagination],
       pagination: {
         el: '.news__pagination',
@@ -23,19 +25,20 @@ import { Grid, Navigation, Pagination } from 'swiper/modules';
       breakpoints: {
         1440: {
           slidesPerView: 'auto',
-          // slidesPerGroup: 3,
           spaceBetween: 32,
         },
         768: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-          autoHeight: false,
+          width: 678,
           grid: {
             rows: 2,
-            fill: 'row',
+            fill: 'rows',
           },
+          slidesPerGroup: 2,
+          slidesPerView: 2,
+          spaceBetween: 30,
         },
         320: {
+          slidesPerGroup: 1,
           slidesPerView: 1,
           spaceBetween: 20,
         },

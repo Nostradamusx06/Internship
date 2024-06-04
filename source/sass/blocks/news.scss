@@ -1,8 +1,9 @@
 .news__wrapper {
-  padding: 50px 15px;
-
+  padding: 50px 0 50px 15px;
+  overflow: hidden;
   @media(min-width: $tablet-width) {
     padding: 50px 45px;
+    overflow: visible;
   }
 
   @media(min-width: $desktop-width) {
@@ -16,12 +17,13 @@
   line-height: $font-line-size-dog;
 
   margin: 0;
-
+  padding-right: 15px;
   text-align: center;
 
   color: $color-cerulean-blue;
 
   @media(min-width: $tablet-width) {
+    padding: 0;
     font-size: $font-line-size-hippo;
     line-height: $font-line-size-anaconda;
   }
@@ -33,14 +35,16 @@
 
 .news__tabs {
   display: flex;
-  flex-wrap: wrap;
-
-  width: fit-content;
+  overflow: scroll;
+  width: max-content;
   margin: 0 auto;
-
-  gap: 12px;
+  padding:24px 0;
+  gap: 9px;
 
   @media(min-width: $tablet-width) {
+    flex-wrap: wrap;
+
+    width: fit-content;
     padding-top: 30px;
     padding-left: 2px;
 
@@ -60,7 +64,7 @@
   font-weight: $medium;
   line-height: $font-line-size-mouse;
 
-  padding: 7px 13px;
+  padding:10px 13px 10px 15px;
 
   letter-spacing: 0.24px;
   text-transform: uppercase;
@@ -129,7 +133,7 @@
   }
 }
 
-.news__swiper-slide.swiper-slide {
+.news__swiper-slide {
   max-width: 290px;
   min-height: 330px;
 
@@ -252,7 +256,7 @@
   display: flex;
   align-items: center;
 
-  padding: 12px 48px 15px 18px;
+  padding: 12px 48px 10px 0;
 
   border-radius: 0 12px 0;
   background-color: $color-alabaster;
@@ -344,9 +348,9 @@
 
   position: relative;
 
-  width: 122px;
+  width: 193px;
   margin: 0;
-  padding: 18px 6px 6px 18px;
+  padding: 10px 7px 4px 0;
 
   color: $color-cerulean-blue;
   border-radius: 0 12px 0 0;
@@ -391,7 +395,7 @@
   font-weight: $regular;
   line-height: $font-line-size-rat;
 
-  width: 188px;
+  width: 199px;
   margin: 0;
 
   background-color: $color-alabaster;
@@ -413,8 +417,8 @@
 .news__content-button {
   &::before {
     position: absolute;
-    top: 60px;
-    right: 18px;
+    top: 18px;
+    right: 10px;
 
     width: 30px;
     height: 30px;
@@ -426,6 +430,7 @@
 
     @media(min-width: $tablet-width) {
       top: 37px;
+      right: 18px;
     }
 
     @media(min-width: $desktop-width) {
@@ -435,8 +440,8 @@
 
   &::after {
     position: absolute;
-    top: 71px;
-    right: 29px;
+    top: 29px;
+    right: 21px;
 
     width: 8px;
     height: 8px;
@@ -456,7 +461,6 @@
 
     @media(min-width: $desktop-width) {
       top: 26px;
-      right: 29px;
     }
   }
 }
@@ -544,4 +548,3 @@
     }
   }
 }
-
