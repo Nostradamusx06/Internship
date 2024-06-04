@@ -325,8 +325,7 @@
 .modal__checkbox-field:disabled:hover+.modal__checkbox-check {
   border: 1px solid $color-cerulean-blue;
   opacity: 0.6;
-  background-color: rgba($color-cerulean-blue, 0.6);
-
+  background-color: $color-cerulean-blue-60;
   &::after {
     display: none;
   }
