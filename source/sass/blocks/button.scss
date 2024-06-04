@@ -51,25 +51,26 @@
     color: $color-mischka;
     border-color: $color-mischka;
 
-    &::before {
-      color: $color-default-white;
-      background-color: $color-mischka;
-    }
+    &:focus-visible::after {
+      transform: none;
 
-    &:focus-visible {
       outline: none;
-
-      &::after {
-        transform: none;
-      }
     }
+  }
+
+  &:disabled::before,
+  &.is-disabled::before {
+    color: $color-default-white;
+    background-color: $color-mischka;
   }
 }
 
 .button--swiper {
+  position: relative;
+
   width: 22px;
   height: 22px;
-position: relative;
+
   border: none;
   background-color: transparent;
 
@@ -133,21 +134,20 @@ position: relative;
       opacity: 1;
     }
   }
+}
 
-  &:disabled,
-  &--disabled {
-    &:hover::after {
-      opacity: 1;
-    }
+.button--swiper:disabled,
+.button--swiper.is-disabled {
+  &:hover::after {
+    opacity: 1;
+  }
 
-    &::after {
-      background-color: $color-mischka;
-    }
+  &::after {
+    background-color: $color-mischka;
+  }
 
-    &::before {
-      opacity: 0;
-    }
-
+  &::before {
+    opacity: 0;
   }
 }
 
