@@ -1,17 +1,16 @@
 .news__wrapper {
   position: relative;
 
-  overflow: hidden;
-
+  max-width: 290px;
   padding: 50px 0 50px 15px;
 
   @media(min-width: $tablet-width) {
-    overflow: visible;
-
+    max-width: 678px;
     padding: 50px 45px;
   }
 
   @media(min-width: $desktop-width) {
+    max-width: 1240px;
     padding: 60px 100px;
   }
 }
@@ -22,7 +21,6 @@
   line-height: $font-line-size-dog;
 
   margin: 0;
-  padding-right: 15px;
 
   text-align: center;
 
@@ -31,8 +29,6 @@
   @media(min-width: $tablet-width) {
     font-size: $font-line-size-hippo;
     line-height: $font-line-size-anaconda;
-
-    padding: 0;
   }
 
   @media(min-width: $desktop-width) {
@@ -42,9 +38,9 @@
 
 .news__tabs {
   display: flex;
-  overflow: scroll;
+  overflow-x: auto;
 
-  width: max-content;
+  width: 305px;
   margin: 0 auto;
   padding: 24px 0;
 
@@ -73,6 +69,7 @@
   font-weight: $medium;
   line-height: $font-line-size-mouse;
 
+  min-width: max-content;
   padding: 10px 13px 10px 15px;
 
   letter-spacing: 0.24px;
@@ -110,12 +107,14 @@
 }
 
 .news__tab.is-active {
+  padding: 10px 14.5px 9px 14px;
+
   color: $color-cerulean-blue;
   border-color: $color-cerulean-blue;
 }
 
 .news__swiper.swiper {
-  height: 680px;
+  height: 600px;
 
   @media(min-width: $tablet-width) {
     height: 760px;
@@ -128,6 +127,10 @@
 
 .news__swiper.swiper-grid>.swiper-wrapper {
   flex-wrap: wrap;
+
+  @media(max-width: $mobile-width) {
+    min-height: 590px;
+  }
 }
 
 .news__swiper.swiper-grid-column>.swiper-wrapper {
@@ -143,7 +146,6 @@
 
   margin: 0;
   padding: 0;
-  padding-bottom: 50px;
 
   list-style: none;
 
@@ -163,12 +165,36 @@
 }
 
 .news__swiper-slide.swiper-slide {
-  max-width: 320px;
-  height: 290px;
-  max-height: 260px;
+  max-width: 290px;
+  min-height: 240px;
+  max-height: 240px;
 
   border-radius: 12px;
   background-repeat: no-repeat;
+
+  @media(max-width: $mobile-width) {
+    &:nth-child(odd) {
+      min-height: 330px;
+
+      .news__content-button {
+        &::before {
+          top: 18px;
+        }
+
+        &::after {
+          top: 29px;
+        }
+      }
+
+      .news__content {
+        bottom: 0;
+      }
+
+      .news__content-wrapper {
+        padding-top: 12px;
+      }
+    }
+  }
 
   @media(min-width: $tablet-width) {
     position: relative;
@@ -322,14 +348,6 @@
   z-index: 1;
   bottom: 0;
   left: 0;
-
-  @media(min-width: $tablet-width) {
-    // bottom: 30px;
-  }
-
-  @media(min-width: $desktop-width) {
-    bottom: 0;
-  }
 }
 
 .news__content-wrapper {
@@ -338,7 +356,7 @@
   display: flex;
   align-items: center;
 
-  padding: 12px 48px 10px 0;
+  padding: 14px 48px 10px 0;
 
   border-radius: 0 12px 0;
   background-color: $color-alabaster;
@@ -499,7 +517,7 @@
 .news__content-button {
   &::before {
     position: absolute;
-    top: 18px;
+    top: 12px;
     right: 10px;
 
     width: 30px;
@@ -522,7 +540,7 @@
 
   &::after {
     position: absolute;
-    top: 29px;
+    top: 23px;
     right: 21px;
 
     width: 8px;
@@ -552,9 +570,7 @@
   align-items: center;
   justify-content: space-between;
 
-  padding-top: 10px;
-
-  gap: 20px;
+  padding-top: 15px;
 
   @media(min-width: $tablet-width) {
     padding-top: 10px;
@@ -568,13 +584,13 @@
 .news__pagination {
   position: absolute;
   z-index: 1;
-  bottom: 0;
-  left: 526px;
+  bottom: 46px;
+  left: 83px;
 
   display: flex;
   overflow: hidden;
 
-  gap: 16px;
+  gap: 14px;
 
   @media(min-width: $tablet-width) {
     bottom: 44px;
