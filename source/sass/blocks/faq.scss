@@ -1,34 +1,21 @@
 .faq__wrapper {
-  padding: 50px 15px;
+  padding: 50px 15px 35px;
 
   @media(min-width: $tablet-width) {
     padding: 50px 45px;
   }
 
   @media(min-width: $desktop-width) {
-    padding: 60px 206px;
+    padding: 60px 206px 55px;
   }
 }
 
 .faq__title {
-  font-size: $font-line-size-dog;
-  font-weight: $regular;
-  line-height: $font-line-size-dog;
-
   margin: 0 auto;
 
   text-align: center;
 
-  color: $color-cerulean-blue;
-
-  @media(min-width: $tablet-width) {
-    font-size: $font-line-size-hippo;
-    line-height: $font-line-size-anaconda;
-  }
-
   @media(min-width: $desktop-width) {
-    font-size: $font-line-size-anaconda;
-
     padding-top: 11px;
   }
 }

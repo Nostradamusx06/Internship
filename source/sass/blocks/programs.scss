@@ -10,7 +10,7 @@
 
   @media(min-width: $desktop-width) {
     padding: 62px 100px 60px;
-    max-width: 1200px;
+    max-width: 1240px;
   }
 }
 
@@ -28,23 +28,9 @@
 }
 
 .programs__title {
-  font-size: $font-line-size-dog;
-  font-weight: $regular;
-  line-height: $font-line-size-dog;
-
-  margin: 0;
-
-  color: $color-cerulean-blue;
-
   @media(min-width: $tablet-width) {
-    font-size: $font-line-size-hippo;
-    line-height: $font-line-size-anaconda;
 
     padding-top: 3px;
-  }
-
-  @media(min-width: $desktop-width) {
-    font-size: $font-line-size-anaconda;
   }
 }
 
@@ -133,7 +119,7 @@
   }
 }
 
-.programs__swiper {
+.programs__swiper.swiper {
   @media(min-width: $tablet-width) {
     padding-right: 45px;
   }

@@ -53,24 +53,14 @@
 }
 
 .about__title {
-  font-size: $font-line-size-dog;
-  font-weight: $regular;
-  line-height: $font-line-size-dog;
-
-  margin: 0;
   padding: 1px 0 14px 1px;
 
-  color: $color-cerulean-blue;
 
   @media(min-width: $tablet-width) {
-    font-size: $font-line-size-hippo;
-    line-height: $font-line-size-anaconda;
-
     padding: 0 0 31px;
   }
 
   @media(min-width: $desktop-width) {
-    font-size: $font-line-size-anaconda;
 
     padding: 7px 0 30px;
   }
