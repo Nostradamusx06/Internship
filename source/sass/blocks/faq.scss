@@ -166,6 +166,13 @@
 
     &:nth-child(4n) {
       padding: 41px 42px 39px 40px;
+
+    }
+
+    &:nth-child(4n) .faq__question-title {
+      // .faq__question-title
+
+      width: 775px;
     }
 
     &:nth-child(5n) {
