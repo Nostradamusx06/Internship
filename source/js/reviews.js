@@ -1,26 +1,26 @@
 import Swiper from 'swiper';
-import {Scrollbar, Navigation } from 'swiper/modules';
+import { Scrollbar, Navigation } from 'swiper/modules';
 
 (function () {
-  const initProgramsSwiper = () => {
-    const swiperPrograms = new Swiper('.programs__swiper', {
-      autoHeight: true,
+  const initReviewsSwiper = () => {
+    const swiperReviews = new Swiper('.reviews__swiper', {
       modules: [Scrollbar, Navigation],
       scrollbar: {
-        el: '.programs__scrollbar',
+        el: '.reviews__scrollbar',
         draggable: true,
         dragSize: 394,
       },
       navigation: {
-        nextEl: '.programs__swiper-button--next',
-        prevEl: '.programs__swiper-button--prev',
+        nextEl: '.reviews__swiper-button--next',
+        prevEl: '.reviews__swiper-button--prev',
         disabledClass: 'button--swiper--disabled',
       },
 
       breakpoints: {
         320: {
           allowTouchMove: true,
-          slidesPerView: 1,
+          slidesPerView: 'auto',
+          slidesPerGroup: 1,
           spaceBetween: 30,
         },
         768: {
@@ -33,14 +33,14 @@ import {Scrollbar, Navigation } from 'swiper/modules';
         },
         1440: {
           allowTouchMove: false,
-          slidesPerView: 3,
-          spaceBetween: 31,
+          slidesPerView: 2,
+          spaceBetween: 32,
         },
       },
     });
 
-    return swiperPrograms;
+    return swiperReviews;
   };
 
-  initProgramsSwiper();
+  initReviewsSwiper();
 })();

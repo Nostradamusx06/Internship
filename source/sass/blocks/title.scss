@@ -1,0 +1,18 @@
+.title {
+  font-size: $font-line-size-dog;
+  font-weight: $regular;
+  line-height: $font-line-size-dog;
+
+  margin: 0;
+
+  color: $color-cerulean-blue;
+
+  @media(min-width: $tablet-width) {
+    font-size: $font-line-size-hippo;
+    line-height: $font-line-size-anaconda;
+  }
+
+  @media(min-width: $desktop-width) {
+    font-size: $font-line-size-anaconda;
+  }
+}
