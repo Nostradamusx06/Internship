@@ -796,7 +796,8 @@
               </h3>
               <p>Я рекомендую программу «Стажировка» всем студентам, желающим получить незабываемые впечатления.
                 Сочетание путешествий, общения и значимой работы действительно отличает её&nbsp;от других
-                программ, и&nbsp;я&nbsp;чувствую огромную благодарность за&nbsp;предоставленную мне&nbsp;возможность.</p>
+                программ, и&nbsp;я&nbsp;чувствую огромную благодарность за&nbsp;предоставленную мне&nbsp;возможность.
+              </p>
             </li>
 
             <li class="reviews__swiper-slide swiper-slide">
@@ -945,6 +946,44 @@
         </div>
       </div>
     </section>
+    <section class="contacts" id="contacts" data-test="contacts">
+      <div class="contacts__wrapper">
+        <div class="contacts__content">
+          <h2 class="contacts__title title">Контакты</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__heading">Центральный офис</p>
+              <p class="contacts__description">г. Новосибирск, ул. Щетинкина 68,<br> культурный центр</p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__heading">Телефон</p>
+              <a class="contacts__description contacts__link" href="tel:+79638768776">+7 963 876 876 76</a>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__heading">Email</p>
+              <a class="contacts__description contacts__link" href="mailto:info@stazh.ru">Info@stazh.ru</a>
+            </li>
+          </ul>
+        </div>
+
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/contacts/map-desktop@1x.webp 1x,
+          img/contacts/map-desktop@2x.webp 2x" width="1240" height="486">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/contacts/map-tablet@1x.webp 1x,
+          img/contacts/map-tablet@2x.webp 2x" width="678" height="500">
+          <source type="image/webp" media="(min-width: 320px)" srcset="img/contacts/map-mobile@1x.webp 1x,
+          img/contacts/map-mobile@2x.webp 2x" width="290" height="240">
+
+          <source type="image/png" media="(min-width: 1440px)" srcset="img/contacts/map-desktop@1x.jpg 1x,
+          img/contacts/map-desktop@2x.jpg 2x" width="1240" height="486">
+          <source type="image/png" media="(min-width: 768px)" srcset="img/contacts/map-tablet@1x.jpg 1x,
+          img/contacts/map-tablet@2x.jpg 2x" width="678" height="500">
+          <img class="contacts__map" src="img/contacts/map-mobile@1x.jpg" srcset="img/contacts/map-mobile@2x.jpg 2x"
+            alt="Карта с местоположением офиса компании" width="290" height="240">
+        </picture>
+      </div>
+    </section>
+
   </main>
   <script type="module" src="js/main.js"></script>
 </body>
