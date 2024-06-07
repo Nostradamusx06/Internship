@@ -1,4 +1,4 @@
-.contacts__wrapper {
+.contacts {
   padding: 76px 15px 70px;
 
   background-color: $color-cerulean-blue;
@@ -9,6 +9,17 @@
 
   @media(min-width: $desktop-width) {
     padding: 120px 100px;
+  }
+}
+
+.contacts__wrapper {
+  max-width: 290px;
+  margin: 0 auto;
+  @media(min-width: $tablet-width) {
+    max-width: 678px;
+  }
+  @media(min-width: $desktop-width) {
+    max-width: 1240px;
   }
 }
 
@@ -123,6 +134,7 @@
 
 .contacts__link {
   text-underline-offset: 5px;
+
   @media(min-width: $desktop-width) {
     line-height: 17px;
   }
