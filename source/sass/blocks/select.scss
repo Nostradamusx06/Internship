@@ -144,6 +144,8 @@
 .select--form {
   &::after {
     background-color: $color-default-white;
+    top: 43px;
+    right: 31px;
 
     @media(min-width: $tablet-width) {
       top: 50px;

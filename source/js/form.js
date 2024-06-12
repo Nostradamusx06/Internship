@@ -1,5 +1,5 @@
 (function () {
-  const form = document.querySelector('.form__form-container');
+  const form = document.querySelector('.form');
   const submitButton = form.querySelector('.form__submit-button');
 
   const toggleSubmitButton = (isDisabled) => {

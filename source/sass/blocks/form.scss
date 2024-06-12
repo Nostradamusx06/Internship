@@ -42,7 +42,7 @@
 
   width: 270px;
   margin: 0 auto;
-  padding: 18px 15px;
+  padding: 18px 15px 27px;
   border-radius: 16px;
   background-color: $color-cerulean-blue;
 
@@ -61,7 +61,7 @@
 .form__title {
   font-size: $font-line-size-fox;
   font-weight: $regular;
-  line-height: $font-line-size-fox;
+  line-height: 17px;
 
   margin: 0;
 
@@ -87,7 +87,7 @@
   font-size: $font-line-size-rat;
   font-weight: $regular;
   line-height: $font-line-size-dog;
-
+  color: $color-alabaster;
   margin: 0;
 
   @media(min-width: $tablet-width) {
@@ -101,8 +101,7 @@
 }
 
 .form__header-wrapper {
-  padding-bottom: 20px;
-  color: $color-alabaster;
+  padding-bottom: 21px;
 
   @media(min-width: $tablet-width) {
     padding-bottom: 40px;
@@ -282,15 +281,17 @@
 
 .form__field.select__field {
   margin-bottom: 0;
+  margin-top: 11px;
+  height: 48px;
 
   @media(min-width: $tablet-width) {
     padding-left: 37px;
     height: 48px;
+    margin-top: 12px;
   }
 
   @media(min-width: $desktop-width) {
     padding-left: 20px;
-    height: 48px;
     margin-top: 11px;
   }
 }
