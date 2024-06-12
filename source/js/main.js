@@ -1,9 +1,11 @@
 import './burger.js';
+import './select.js';
 import './dropdown.js';
 import './hero.js';
 import './modal.js';
-import './modal-tel.js';
+import './tel.js';
 import './programs.js';
 import './news.js';
 import './faq.js';
 import './reviews.js';
+import './form.js';

@@ -66,6 +66,67 @@
   }
 }
 
+.button--blue {
+  &:focus-visible {
+    &::after {
+      transform: rotate(45deg);
+
+      background-color: $color-cerulean-blue;
+    }
+  }
+
+  &:hover,
+  &:active {
+    color: $color-cerulean-blue;
+    background-color: $color-default-white;
+
+    &::before {
+      background-color: $color-cerulean-blue;
+    }
+
+    &::after {
+      transform: rotate(45deg);
+
+      background-color: $color-default-white;
+    }
+  }
+
+  &:active {
+    color: $color-cerulean-blue-70;
+
+    &::before {
+      background-color: $color-cerulean-blue;
+    }
+
+    &::after {
+      transform: rotate(45deg);
+
+      background-color: rgba($color-default-white, 0.7);
+    }
+  }
+
+  &:disabled,
+  &.is-disabled {
+    pointer-events: none;
+
+    color: $color-mischka;
+    border-color: $color-mischka;
+
+    &::before {
+      color: $color-default-white;
+      background-color: $color-mischka;
+    }
+
+    &:focus-visible {
+      outline: none;
+
+      &::after {
+        transform: none;
+      }
+    }
+  }
+}
+
 .button--swiper {
   width: 22px;
   height: 22px;

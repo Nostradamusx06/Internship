@@ -41,8 +41,8 @@
   };
 
   const onClick = () => {
-    if (!modal.classList.contains('modal__eror')) {
-      modal.classList.add('modal__error');
+    if (!modal.classList.contains('is-error')) {
+      modal.classList.add('is-error');
     }
   };
 
@@ -59,4 +59,5 @@
   modal.addEventListener('submit', onSubmit);
   submitButton.addEventListener('click', onClick);
 })();
+
 
