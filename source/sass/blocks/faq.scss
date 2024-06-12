@@ -150,6 +150,10 @@
       padding: 30px 42px 30px 30px;
     }
 
+    &:nth-child(4n) .faq__accordion-button {
+      top: 30px;
+    }
+
     &:nth-child(4n) .faq__question-title {
       // .faq__question-title
 
@@ -158,6 +162,10 @@
 
     &:nth-child(5n) {
       padding: 30px 42px 30px 30px;
+    }
+
+    &:nth-child(5n) .faq__accordion-button {
+      top: 30px;
     }
   }
 
@@ -168,6 +176,9 @@
       padding: 41px 42px 39px 40px;
 
     }
+    &:nth-child(4n) .faq__accordion-button {
+      top: 27px;
+    }
 
     &:nth-child(4n) .faq__question-title {
       // .faq__question-title
@@ -177,6 +188,10 @@
 
     &:nth-child(5n) {
       padding: 41px 42px 39px 40px;
+    }
+
+    &:nth-child(5n) .faq__accordion-button {
+      top: 36px;
     }
   }
 }
