@@ -24,11 +24,13 @@
   };
 
   const initPhoneInput = () => {
-    const phoneInput = document.getElementById('phone');
-    phoneInput.addEventListener('input', onPhoneInputInput);
-    phoneInput.addEventListener('blur', onPhoneInputBlur);
-    phoneInput.addEventListener('focus', () => {
-      phoneInput.value = baseCountryCode;
+    const phoneInputs = document.querySelectorAll('#phone');
+    phoneInputs.forEach((phoneInput) => {
+      phoneInput.addEventListener('input', onPhoneInputInput);
+      phoneInput.addEventListener('blur', onPhoneInputBlur);
+      phoneInput.addEventListener('focus', () => {
+        phoneInput.value = baseCountryCode;
+      });
     });
   };
 

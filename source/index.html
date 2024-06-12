@@ -254,42 +254,33 @@
           мы на них ответим!</p>
         <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
 
-          <label class="modal__label" for="name">
+          <div class="modal__input-wrapper">
             <input class="modal__field" type="text" name="name" id="name" required>
-            <span class="modal__label-text">Имя</span>
-          </label>
+            <label class="modal__label" for="name">Имя</label>
+          </div>
 
-          <label class="modal__label" for="phone">
+          <div class="modal__input-wrapper">
             <input class="modal__field" type="tel" name="phone" id="phone" required>
-            <span class="modal__label-text">Телефон</span>
-          </label>
+            <label class="modal__label" for="phone">Телефон</label>
+          </div>
 
-          <label class="modal__label" for="city">
-            <div class="modal__select-container">
-              <select class="modal__select" id="city">
-                <option class="modal__option" value="" tabindex="0" aria-selected="false">
-                </option>
-                <option class="modal__option" value="Санкт-Петербург" tabindex="0" aria-selected="false">
-                  Санкт-Петербург
-                </option>
-                <option class="modal__option" value="Санкт-Петербург" tabindex="0" aria-selected="false">
-                  Санкт-Петербург
-                </option>
-                <option class="modal__option" value="Санкт-Петербург" tabindex="0" aria-selected="false">
-                  Санкт-Петербург
-                </option>
-                <option class="modal__option" value="Санкт-Петербург" tabindex="0" aria-selected="false">
-                  Санкт-Петербург
-                </option>
-              </select>
-            </div>
-            <span class="modal__label-text">Выберите город</span>
-          </label>
-          <label class="modal__checkbox" for="permission">
-            <input class="modal__checkbox-field visually-hidden" type="checkbox" name="permission" id="permission"
-              required>
-            <span class="modal__checkbox-check"></span>
-            <span class="modal__checkbox-text">Я согласен на обработку моих персональных данных</span>
+
+          <div class="modal__select select select--modal">
+            <input class="modal__field select__field" id="city" name="city" type="text" minlength="2" value=" "
+              readonly>
+            <label class="modal__label" for="city">Выберите город</label>
+            <ul class="select__dropdown" id="select-modal">
+              <li class="select__option">Санкт-Петербург1</li>
+              <li class="select__option">Санкт-Петербург2</li>
+              <li class="select__option">Санкт-Петербург3</li>
+              <li class="select__option">Санкт-Петербург4</li>
+            </ul>
+          </div>
+
+          <label class="modal__checkbox checkbox checkbox--modal" for="permission-modal">
+            <input class="checkbox__field visually-hidden" type="checkbox" name="permission" id="permission-modal" required>
+            <span class="checkbox__check"></span>
+            <span class="checkbox__text">Я согласен на обработку моих персональных данных</span>
           </label>
 
           <button class="modal__submit-button button button--light" type="submit">Отправить</button>
@@ -983,7 +974,53 @@
         </picture>
       </div>
     </section>
+    <section class="form" data-test="form">
+      <h2 class="visually-hidden">Форма</h2>
+      <div class="form__wrapper">
 
+        <form class="form__form-container" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form__header-wrapper">
+            <h3 class="form__title">Напишите нам</h3>
+            <p class="form__description">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+          </div>
+
+          <div class="form__input-wrapper">
+            <input class="form__field" type="text" name="name" id="name" required>
+            <label class="form__label" for="name">Имя</label>
+          </div>
+
+          <div class="form__input-wrapper">
+            <input class="form__field" type="tel" name="phone" id="phone" required>
+            <label class="form__label" for="phone">Телефон</label>
+          </div>
+
+          <div class="form__input-wrapper">
+            <textarea class="form__field form__field--textarea" name="message" required></textarea>
+            <label class="form__label" for="message">Ваше сообщение</label>
+          </div>
+
+          <div class="form__select select select--form">
+            <input class="form__field select__field" id="city" name="city" type="text" minlength="2" value=" "
+              readonly>
+            <label class="form__label" for="city">Выберите город</label>
+            <ul class="select__dropdown" id="select-form">
+              <li class="select__option">Санкт-Петербург1</li>
+              <li class="select__option">Санкт-Петербург2</li>
+              <li class="select__option">Санкт-Петербург3</li>
+              <li class="select__option">Санкт-Петербург4</li>
+            </ul>
+          </div>
+
+          <label class="form__checkbox checkbox checkbox--form" for="permission-form">
+            <input class="checkbox__field visually-hidden" type="checkbox" name="permission" id="permission-form" required>
+            <span class="checkbox__check"></span>
+            <span class="checkbox__text">Я согласен на обработку моих персональных данных</span>
+          </label>
+
+          <button class="form__submit-button button button--blue" type="submit">Отправить</button>
+        </form>
+      </div>
+    </section>
   </main>
   <script type="module" src="js/main.js"></script>
 </body>
