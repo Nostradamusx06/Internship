@@ -14,7 +14,7 @@ import 'swiper/css';
         dynamicBullets: true,
         dynamicMainBullets: 2,
         renderBullet: function (index, className) {
-          return `<span class="${className}">${index + 1}</span>`;
+          return `<button class="${className}">${index + 1}</button>`;
         },
       },
       navigation: {

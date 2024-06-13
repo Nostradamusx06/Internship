@@ -610,11 +610,17 @@
     border-radius: 50%;
     background-color: transparent;
 
-    &:hover,
-    &:focus-visible {
+    &:hover {
       color: $color-cerulean-blue;
       border-color: $color-cerulean-blue;
       background-color: transparent;
+    }
+
+    &:focus-visible {
+      color: $color-cerulean-blue;
+      border-color: $color-cerulean-blue;
+      background-color: $color-default-white;
+      outline: none;
     }
 
     &:active {
