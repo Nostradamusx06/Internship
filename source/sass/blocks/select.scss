@@ -99,7 +99,7 @@
 
 .select__option {
   padding: 17px 20px;
-  line-height: 14px;
+  line-height: $font-line-size-rat;
   cursor: pointer;
 
   &:hover {

@@ -82,9 +82,9 @@
 }
 
 .contacts__heading {
-  font-size: 12px;
+  font-size: $font-line-size-mouse;
   font-weight: 400;
-  line-height: 12px;
+  line-height: $font-line-size-mouse;
 
   margin: 0;
   padding-bottom: 14px;
@@ -105,9 +105,9 @@
 }
 
 .contacts__description {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
+  font-size: $font-line-size-rat;
+  font-weight: $regular;
+  line-height: $font-line-size-dog;
 
   margin: 0;
 
@@ -120,11 +120,11 @@
   }
 
   @media(min-width: $tablet-width) {
-    font-size: 16px;
+    font-size: $font-line-size-rabbit;
   }
 
   @media(min-width: $desktop-width) {
-    line-height: 26px;
+    line-height: $font-line-size-moose;
 
     br {
       display: block;
@@ -136,7 +136,7 @@
   text-underline-offset: 5px;
 
   @media(min-width: $desktop-width) {
-    line-height: 17px;
+    line-height: $font-line-size-hare;
   }
 
   &:hover {

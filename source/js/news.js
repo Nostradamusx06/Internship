@@ -1,6 +1,7 @@
 import Swiper from 'swiper';
 import { Grid, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/pagination';
 
 (function () {
   const initNewsSwiper = () => {
@@ -10,11 +11,15 @@ import 'swiper/css';
       modules: [Grid, Navigation, Pagination],
       pagination: {
         el: '.news__pagination',
+        type: 'bullets',
+        bulletClass: 'swiper-pagination-bullet',
+        bulletActiveClass: 'swiper-pagination-bullet--active',
+        bulletElement: 'button',
         clickable: true,
         dynamicBullets: true,
-        dynamicMainBullets: 2,
+        dynamicMainBullets: 3,
         renderBullet: function (index, className) {
-          return `<button class="${className}">${index + 1}</button>`;
+          return `<button class="pagination__button ${className}">${index + 1}</button>`;
         },
       },
       navigation: {
@@ -28,6 +33,8 @@ import 'swiper/css';
           slidesPerGroup: 1,
           slidesPerView: 1,
           spaceBetween: 20,
+          observer: true,
+          observeParents: true,
           grid: {
             rows: 2,
             fill: 'column',

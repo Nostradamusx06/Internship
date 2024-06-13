@@ -317,7 +317,7 @@
 
   @media(min-width: $desktop-width) {
     font-size: $font-line-size-deer;
-    line-height: 17px;
+    line-height: $font-line-size-hare;
 
     width: 170px;
     padding: 18px 6px 6px 18px;
