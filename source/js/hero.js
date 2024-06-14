@@ -10,10 +10,6 @@ import { Pagination } from 'swiper/modules';
   const initHeroSwiper = () => {
     const swiperHero = new Swiper('.slider__swiper', {
       modules: [Pagination],
-      loop: true,
-      slidesPerView: 1,
-      autoHeight: true,
-      watchSlidesProgress: true,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -22,9 +18,16 @@ import { Pagination } from 'swiper/modules';
         bulletClass: 'slider__pagination-bullet',
         bulletActiveClass: 'is-active',
       },
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      autoHeight: true,
+      watchSlidesProgress: true,
+      updateOnWindowResize: true,
 
       breakpoints: {
         1440: {
+          simulateTouch: false,
           allowTouchMove: false,
         },
       },
