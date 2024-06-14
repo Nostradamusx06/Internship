@@ -190,11 +190,6 @@
   color: rgba($color-mischka, 0.6);
 }
 
-.is-error .modal__field:invalid {
-  border-color: rgba($color-wild-watermelon, 0.7);
-  background-color: rgba($color-wild-watermelon, 0.2);
-}
-
 .modal__submit-button {
   font-size: $font-line-size-mouse;
   font-weight: $medium;

@@ -109,10 +109,6 @@
   color: $color-mischka;
 }
 
-.is-error .checkbox__field:invalid+.checkbox__check {
-  border-color: rgba($color-wild-watermelon, 0.7);
-  background-color: rgba($color-wild-watermelon, 0.2);
-}
 
 .checkbox--modal {
   .checkbox__field {
