@@ -189,8 +189,8 @@
 
       width: 20px;
       height: 20px;
-
-      background-image: url("/__spritemap#sprite-burger-open-view");
+      background-color: $color-cerulean-blue;
+      mask-image: url("/__spritemap#sprite-burger-open-view");
     }
 
     &::after {
@@ -236,7 +236,7 @@
   min-height: 54px;
   padding: 2px 3px 3px 20px;
 
-  transition: width 0.3s ease-in;
+  transition: width 0.3s ease-in, background-color 0.2s ease;
   text-align: left;
   letter-spacing: 0.28px;
   text-transform: uppercase;
@@ -250,6 +250,55 @@
     min-height: 56px;
   }
 
+  &:hover,
+  &:active {
+    color: $color-default-white;
+    background-color: $color-cerulean-blue;
+
+    &::after {
+      background-color: $color-default-white;
+    }
+
+    &::before {
+
+      background-color: $color-cerulean-blue;
+    }
+  }
+
+  &:active {
+    color: rgba($color-default-white, 0.7);
+
+    &:hover {
+      background-color: inherit;
+    }
+
+    &::after {
+      background-color: $color-default-white;
+    }
+
+    &::before {
+
+      background-color: $color-cerulean-blue-70;
+    }
+  }
+
+  &:disabled,
+  &.is-disabled {
+    pointer-events: none;
+
+    color: $color-mischka;
+    border-color: $color-mischka;
+
+    &::after {
+      color: $color-default-white;
+      background-color: $color-mischka;
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+
   &::before {
     position: absolute;
     z-index: 2;
@@ -261,9 +310,10 @@
 
     content: "";
 
-    background-image: url("/__spritemap#sprite-burger-close-view");
-    background-repeat: no-repeat;
-    background-position: center;
+    mask-image: url("/__spritemap#sprite-burger-close-view");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $color-default-white;
 
     @media(min-width: $tablet-width) {
       top: 23px;
