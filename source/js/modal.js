@@ -59,5 +59,3 @@
   modal.addEventListener('submit', onSubmit);
   submitButton.addEventListener('click', onClick);
 })();
-
-

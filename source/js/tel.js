@@ -24,7 +24,7 @@
   };
 
   const initPhoneInput = () => {
-    const phoneInputs = document.querySelectorAll('#phone');
+    const phoneInputs = document.querySelectorAll('#form-phone, #modal-phone');
     phoneInputs.forEach((phoneInput) => {
       phoneInput.addEventListener('input', onPhoneInputInput);
       phoneInput.addEventListener('blur', onPhoneInputBlur);
