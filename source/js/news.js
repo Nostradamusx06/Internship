@@ -8,6 +8,8 @@ import 'swiper/css/pagination';
     const swiperNews = new Swiper('.news__swiper', {
       autoHeight: true,
       direction: 'horizontal',
+      watchSlidesProgress: true,
+
       modules: [Grid, Navigation, Pagination],
       pagination: {
         el: '.news__pagination',

@@ -359,10 +359,7 @@
     mask-size: cover;
 
     @media(min-width: $tablet-width) {
-      right: -26px;
-
-      width: 26px;
-      height: 26px;
+     display: none;
     }
   }
 }
@@ -424,7 +421,6 @@
   position: relative;
   z-index: 1;
   top: -12px;
-  // left: 15px;
 
   display: flex;
 
@@ -439,7 +435,6 @@
 
   @media(min-width: $tablet-width) {
     top: -6px;
-    // left: 45px;
 
     padding: 14px 20px;
 
@@ -448,7 +443,6 @@
 
   @media(min-width: $desktop-width) {
     top: -16px;
-    // left: 100px;
   }
 
   &::after {
