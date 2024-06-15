@@ -3,27 +3,27 @@
 
   padding: 55px 15px 50px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 50px 0 50px 45px;
   }
 
-  @media(min-width: $desktop-width) {
-    padding: 65px 100px 60px 100px;
+  @media (min-width: $desktop-width) {
+    padding: 65px 100px 60px;
   }
 }
 
 .reviews__title {
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-left: 3px;
   }
 }
 
 .reviews__swiper.swiper {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-right: 45px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-right: 0;
   }
 }
@@ -32,12 +32,12 @@
   padding: 0;
   padding-top: 19px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 24px;
     padding-bottom: 23px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 29px;
     padding-bottom: 23px;
   }
@@ -51,13 +51,13 @@
   border: 2px solid $color-cerulean-blue;
   border-radius: 16px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     max-width: 461px;
     height: 311px;
     padding: 50px 45px 52px 50px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     max-width: 505px;
     height: 377px;
     padding: 50px 45px 52px 50px;
@@ -75,7 +75,7 @@
 
   gap: 12px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     align-items: center;
     flex-direction: row;
 
@@ -85,7 +85,7 @@
     gap: 14px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-right: 2px;
   }
 }
@@ -101,7 +101,7 @@
 
   gap: 10px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     gap: 15px;
   }
 }
@@ -117,14 +117,14 @@
 
   color: $color-cerulean-blue;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: $font-line-size-dog;
     line-height: $font-line-size-deer;
 
     padding-bottom: 2px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     font-size: $font-line-size-fox;
   }
 }
@@ -136,7 +136,7 @@
 
   gap: 26px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     gap: 25px;
   }
 }
@@ -154,7 +154,7 @@
 
   color: $color-cerulean-blue;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 10px 0;
   }
 }
@@ -169,14 +169,14 @@
 
   color: $color-charcoal;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: $font-line-size-rat;
     line-height: $font-line-size-dog;
 
     width: auto;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     line-height: $font-line-size-fox;
   }
 }
@@ -191,20 +191,20 @@
 
   color: $color-cerulean-blue;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: $font-line-size-dog;
     line-height: $font-line-size-deer;
 
     padding-bottom: 24.5px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     font-size: $font-line-size-deer;
     line-height: $font-line-size-moose;
   }
 }
 
-.reviews__swiper-slide>p {
+.reviews__swiper-slide > p {
   font-size: $font-line-size-rat;
   font-weight: $regular;
   line-height: $font-line-size-dog;
@@ -213,13 +213,13 @@
 
   color: $color-charcoal;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: $font-line-size-rabbit;
 
     width: 459px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     line-height: $font-line-size-moose;
 
     width: 100%;
@@ -233,7 +233,7 @@
 .reviews__scrollbar {
   display: none;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     position: relative;
 
     display: block;
@@ -247,7 +247,7 @@
     background-color: transparent;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 1136px;
   }
 
@@ -266,14 +266,14 @@
   }
 
   .swiper-scrollbar-drag {
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       width: 324px;
       height: 2px;
 
       background-color: $color-cerulean-blue;
     }
 
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       width: 394px;
     }
   }
@@ -289,7 +289,7 @@
 
   gap: 8px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     top: auto;
     right: 45px;
     bottom: 51px;
@@ -297,7 +297,7 @@
     gap: 10px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     right: 100px;
     bottom: 61px;
   }

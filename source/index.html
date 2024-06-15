@@ -24,7 +24,7 @@
           <h1 class="visually-hidden">Internship programs</h1>
           <nav class="header__nav">
 
-            <div class="header__logo" href="#">
+            <div class="header__logo">
               <img src="img/logo/logo.svg" width="30" height="30" alt="Логотип сайта Internship.">
             </div>
 
@@ -199,19 +199,20 @@
         <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
 
           <div class="modal__input-wrapper">
-            <input class="modal__field" type="text" name="name" id="name" required>
-            <label class="modal__label" for="name">Имя</label>
+            <input class="modal__field" type="text" name="name" id="modal-name" required>
+            <label class="modal__label" for="modal-name">Имя</label>
           </div>
 
           <div class="modal__input-wrapper">
-            <input class="modal__field" type="tel" name="phone" id="phone" required>
-            <label class="modal__label" for="phone">Телефон</label>
+            <input class="modal__field" type="tel" name="phone" id="modal-phone" required>
+            <label class="modal__label" for="modal-phone">Телефон</label>
           </div>
 
 
           <div class="modal__select select select--modal">
-            <input class="modal__field select__field" id="city" name="city" type="text" autocomplete="off" value="" required>
-            <label class="modal__label" for="city">Выберите город</label>
+            <input class="modal__field select__field" id="modal-city" name="city" type="text" autocomplete="off"
+              required>
+            <label class="modal__label" for="modal-city">Выберите город</label>
             <ul class="select__dropdown" id="select-modal">
               <li class="select__option">&nbsp;</li>
               <li class="select__option">Санкт-Петербург</li>
@@ -221,7 +222,7 @@
             </ul>
           </div>
 
-          <label class="modal__checkbox checkbox checkbox--modal" for="permission-modal">
+          <label class="modal__checkbox checkbox checkbox--modal">
             <input class="checkbox__field visually-hidden" type="checkbox" name="permission" id="permission-modal"
               required>
             <span class="checkbox__check"></span>
@@ -411,7 +412,7 @@
             </div>
 
 
-            <div class="news__swiper-slide news__swiper-slide--сareer swiper-slide">
+            <div class="news__swiper-slide news__swiper-slide--job swiper-slide">
               <div class="news__content">
                 <p class="news__date">10/03/2023</p>
                 <h3 class="news__content-title">Построй свою карьеру</h3>
@@ -465,7 +466,7 @@
               </div>
             </div>
 
-            <div class="news__swiper-slide news__swiper-slide--сareer swiper-slide">
+            <div class="news__swiper-slide news__swiper-slide--job swiper-slide">
               <div class="news__content">
                 <p class="news__date">10/03/2023</p>
                 <h3 class="news__content-title">Построй свою карьеру</h3>
@@ -519,7 +520,7 @@
               </div>
             </div>
 
-            <div class="news__swiper-slide news__swiper-slide--сareer swiper-slide">
+            <div class="news__swiper-slide news__swiper-slide--job swiper-slide">
               <div class="news__content">
                 <p class="news__date">10/03/2023</p>
                 <h3 class="news__content-title">Построй свою карьеру</h3>
@@ -573,7 +574,7 @@
               </div>
             </div>
 
-            <div class="news__swiper-slide news__swiper-slide--сareer swiper-slide">
+            <div class="news__swiper-slide news__swiper-slide--job swiper-slide">
               <div class="news__content">
                 <p class="news__date">10/03/2023</p>
                 <h3 class="news__content-title">Построй свою карьеру</h3>
@@ -716,17 +717,17 @@
                       srcset="img/reviews/reviews-mobile-first@2x.jpg 2x" alt="Фотография Лолы Алекс" width="60"
                       height="60">
                   </picture>
-                  <h4 class="reviews__person-name">Лола Алекс</h4>
+                  <h3 class="reviews__person-name">Лола Алекс</h3>
                 </div>
 
                 <div class="reviews__info">
                   <div class="reviews__program">
-                    <h5 class="reviews__info-heading">Программа</h5>
+                    <h4 class="reviews__info-heading">Программа</h4>
                     <p class="reviews__info-description">Masa Art Challenge</p>
                   </div>
 
                   <div class="reviews__date">
-                    <h5 class="reviews__info-heading">Дата</h5>
+                    <h4 class="reviews__info-heading">Дата</h4>
                     <p class="reviews__info-description">Осень 2022</p>
                   </div>
                 </div>
@@ -936,23 +937,23 @@
           </div>
 
           <div class="form__input-wrapper">
-            <input class="form__field" type="text" name="name" id="name" required>
-            <label class="form__label" for="name">Имя</label>
+            <input class="form__field" type="text" name="name" id="form-name" required>
+            <label class="form__label" for="form-name">Имя</label>
           </div>
 
           <div class="form__input-wrapper">
-            <input class="form__field" type="tel" name="phone" id="phone" required>
-            <label class="form__label" for="phone">Телефон</label>
+            <input class="form__field" type="tel" name="phone" id="form-phone" required>
+            <label class="form__label" for="form-phone">Телефон</label>
           </div>
 
           <div class="form__input-wrapper">
-            <textarea class="form__field form__field--textarea" name="message" id="message" required></textarea>
-            <label class="form__label" for="message">Ваше сообщение</label>
+            <textarea class="form__field form__field--textarea" name="message" id="form-message" required></textarea>
+            <label class="form__label" for="form-message">Ваше сообщение</label>
           </div>
 
           <div class="form__select select select--form">
-            <input class="form__field select__field" id="city" name="city" type="text" autocomplete="off" value="" required>
-            <label class="form__label" for="city">Выберите город</label>
+            <input class="form__field select__field" id="form-city" name="city" type="text" autocomplete="off" required>
+            <label class="form__label" for="form-city">Выберите город</label>
             <ul class="select__dropdown" id="select-form">
               <li class="select__option">&nbsp;</li>
               <li class="select__option">Санкт-Петербург</li>
@@ -962,7 +963,7 @@
             </ul>
           </div>
 
-          <label class="form__checkbox checkbox checkbox--form" for="permission-form">
+          <label class="form__checkbox checkbox checkbox--form">
             <input class="checkbox__field visually-hidden" type="checkbox" name="permission" id="permission-form"
               required>
             <span class="checkbox__check"></span>
@@ -1007,17 +1008,20 @@
       </div>
       <ul class="footer__social">
         <li class="footer__social-item">
-          <a class="footer__social-link button footer__social-link--vk" href="#" target="_blank">
+          <a class="footer__social-link button footer__social-link--vk" href="https://vk.com/" target="_blank"
+            rel="noreferrer noopener">
             <span class="visually-hidden">Мы в Вконтакте.</span>
           </a>
         </li>
         <li class="footer__social-item">
-          <a class="footer__social-link button footer__social-link--ok" href="#" target="_blank">
+          <a class="footer__social-link button footer__social-link--ok" href="https://ok.ru/" target="_blank"
+            rel="noreferrer noopener">
             <span class="visually-hidden">Мы в Одноклассниках.</span>
           </a>
         </li>
         <li class="footer__social-item">
-          <a class="footer__social-link button footer__social-link--reddit" href="#" target="_blank">
+          <a class="footer__social-link button footer__social-link--reddit" href="https://www.reddit.com/"
+            target="_blank" rel="noreferrer noopener">
             <span class="visually-hidden">Мы в Reddit.</span>
           </a>
         </li>

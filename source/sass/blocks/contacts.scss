@@ -3,11 +3,11 @@
 
   background-color: $color-cerulean-blue;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 100px 45px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 120px 100px;
   }
 }
@@ -15,10 +15,12 @@
 .contacts__wrapper {
   max-width: 290px;
   margin: 0 auto;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     max-width: 678px;
   }
-  @media(min-width: $desktop-width) {
+
+  @media (min-width: $desktop-width) {
     max-width: 1240px;
   }
 }
@@ -39,13 +41,13 @@
 
   gap: 21px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
 
     gap: 20px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     min-width: 604px;
 
     gap: 40px;
@@ -64,14 +66,14 @@
 
   gap: 35px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 30px;
     padding-bottom: 30px;
 
     gap: 31px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     flex-direction: row;
 
     margin-bottom: 40px;
@@ -95,11 +97,11 @@
   opacity: 0.8;
   color: $color-alabaster;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-bottom: 23px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-bottom: 24px;
   }
 }
@@ -119,11 +121,11 @@
     display: none;
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: $font-line-size-rabbit;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     line-height: $font-line-size-moose;
 
     br {
@@ -135,7 +137,7 @@
 .contacts__link {
   text-underline-offset: 5px;
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     line-height: $font-line-size-hare;
   }
 

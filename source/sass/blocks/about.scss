@@ -2,11 +2,11 @@
   padding: 50px 15px;
   position: relative;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 50px 45px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 63px 100px 60px;
   }
 }
@@ -17,11 +17,11 @@
 
   margin-bottom: 53px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 60px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -38,12 +38,12 @@
     margin: 0;
     padding-bottom: 40px;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       font-size: $font-line-size-dog;
       line-height: $font-line-size-moose;
     }
 
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       font-size: $font-line-size-wolf;
       line-height: $font-line-size-alligator;
 
@@ -56,12 +56,11 @@
   padding: 1px 0 14px 1px;
 
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 0 0 31px;
   }
 
-  @media(min-width: $desktop-width) {
-
+  @media (min-width: $desktop-width) {
     padding: 7px 0 30px;
   }
 }
@@ -79,14 +78,14 @@
 
     color: $color-cerulean-blue;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       font-size: $font-line-size-bear;
       line-height: $font-line-size-bear;
 
       padding-bottom: 29px;
     }
 
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       font-size: $font-line-size-alligator;
       line-height: $font-line-size-rhino;
 
@@ -101,13 +100,13 @@
     margin: 0;
     padding-bottom: 42px;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       font-size: $font-line-size-rabbit;
 
       padding-bottom: 40px;
     }
 
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       line-height: $font-line-size-moose;
 
       padding-bottom: 50px;
@@ -124,14 +123,14 @@
 
   padding: 13px 58px 12.5px 20px;
 
-  letter-spacing: .28px;
+  letter-spacing: 0.28px;
   text-transform: uppercase;
 
   color: $color-cerulean-blue;
   border: 1px solid $color-cerulean-blue;
   border-radius: 30px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: $font-line-size-rat;
     line-height: $font-line-size-rat;
 
@@ -140,7 +139,7 @@
     padding: 19px 80px 21px 30px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 19px 81px 21px 30px;
   }
 
@@ -157,7 +156,7 @@
     border-radius: 44px;
     background-color: $color-cerulean-blue;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       top: 4px;
       right: 4px;
 
@@ -182,7 +181,7 @@
     mask-repeat: no-repeat;
     mask-size: cover;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       top: 23px;
       right: 23px;
     }
@@ -203,7 +202,7 @@
   border-radius: 20px;
   background-color: $color-cerulean-blue;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -213,7 +212,7 @@
     row-gap: 32px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 50px 100px 50px 106px;
   }
 }
@@ -244,12 +243,13 @@
     content: "";
   }
 
+
   &:nth-child(2n),
   &:nth-child(3n) {
     margin: 22px 0 0 10px;
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 209px;
     margin: 22px 0 0 20px;
     padding: 15px 22px 15px 20px;
@@ -262,13 +262,13 @@
     }
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
 
     width: 402px;
     margin: 22px 0 0 14px;
-    padding: 50px 40px 30px 40px;
+    padding: 50px 40px 30px;
 
     &:nth-child(1n) {
       padding-top: 50px;
@@ -332,7 +332,7 @@
     letter-spacing: 0.16px;
     text-transform: uppercase;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       font-size: $font-line-size-dog;
       line-height: $font-line-size-wolf;
 
@@ -341,7 +341,7 @@
       letter-spacing: 0.2px;
     }
 
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       font-size: $font-line-size-moose;
       line-height: $font-line-size-lion;
 
@@ -359,7 +359,7 @@
     width: fit-content;
     margin: 0;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       font-size: $font-line-size-rabbit;
     }
   }

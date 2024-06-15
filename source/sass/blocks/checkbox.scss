@@ -8,14 +8,12 @@
   display: flex;
   justify-content: flex-end;
 
-  margin-top: 20px;
-
   opacity: 0.9;
   width: 257px;
   margin-top: 17px;
   padding-left: 30px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     line-height: $font-line-size-mouse;
     width: 333px;
     margin-top: 20px;
@@ -27,7 +25,7 @@
   padding-top: 5px;
   cursor: pointer;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     br {
       display: none;
     }
@@ -45,13 +43,12 @@
 
   border-radius: 2px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     top: 1px;
   }
 }
 
-.checkbox__field:checked+.checkbox__check {
-
+.checkbox__field:checked + .checkbox__check {
   &::after {
     position: absolute;
     z-index: 2;
@@ -66,18 +63,18 @@
   }
 }
 
-.checkbox__field:hover+.checkbox__check,
-.checkbox__field:focus-visible+.checkbox__check {
+.checkbox__field:hover + .checkbox__check,
+.checkbox__field:focus-visible + .checkbox__check {
   opacity: 0.7;
 }
 
-.checkbox__field:checked:hover:not(:invalid)+.checkbox__check,
-.checkbox__field:checked:focus-visible:not(:invalid)+.checkbox__check {
+.checkbox__field:checked:hover:not(:invalid) + .checkbox__check,
+.checkbox__field:checked:focus-visible:not(:invalid) + .checkbox__check {
   opacity: 1;
 }
 
-.checkbox__field:disabled+.checkbox__check,
-.checkbox__field:disabled:hover+.checkbox__check {
+.checkbox__field:disabled + .checkbox__check,
+.checkbox__field:disabled:hover + .checkbox__check {
   border: 1px solid $color-cerulean-blue;
   opacity: 0.6;
   background-color: $color-cerulean-blue-60;
@@ -87,8 +84,8 @@
   }
 }
 
-.checkbox__field:checked:disabled+.checkbox__check,
-.checkbox__field:checked:disabled:hover+.checkbox__check {
+.checkbox__field:checked:disabled + .checkbox__check,
+.checkbox__field:checked:disabled:hover + .checkbox__check {
   border: 1px solid $color-mischka;
 
   background-color: rgba($color-mischka, 0.8);
@@ -100,8 +97,8 @@
   }
 }
 
-.checkbox__field:disabled~.checkbox__text,
-.checkbox__field:not(:checked):disabled:hover~.checkbox__text {
+.checkbox__field:disabled ~ .checkbox__text,
+.checkbox__field:not(:checked):disabled:hover ~ .checkbox__text {
   color: $color-mischka;
 }
 
@@ -111,7 +108,7 @@
     top: 28px;
     left: 10px;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       top: 21px;
     }
   }
@@ -121,21 +118,21 @@
     background-color: $color-cerulean-blue;
   }
 
-  .checkbox__field:checked+.checkbox__check {
+  .checkbox__field:checked + .checkbox__check {
     background-color: $color-cerulean-blue;
   }
 
-  .checkbox__field:checked+.checkbox__check::after {
+  .checkbox__field:checked + .checkbox__check::after {
     background-color: $color-default-white;
   }
 
-  .checkbox__field:checked:hover:not(:invalid)+.checkbox__check,
-  .checkbox__field:checked:focus-visible:not(:invalid)+.checkbox__check {
+  .checkbox__field:checked:hover:not(:invalid) + .checkbox__check,
+  .checkbox__field:checked:focus-visible:not(:invalid) + .checkbox__check {
     background-color: $color-default-white;
   }
 
-  .checkbox__field:checked:hover:not(:invalid)+.checkbox__check::after,
-  .checkbox__field:checked:focus-visible:not(:invalid)+.checkbox__check::after {
+  .checkbox__field:checked:hover:not(:invalid) + .checkbox__check::after,
+  .checkbox__field:checked:focus-visible:not(:invalid) + .checkbox__check::after {
     background-color: $color-cerulean-blue;
   }
 }
@@ -147,12 +144,12 @@
     top: 35px;
     left: 10px;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       top: 21px;
     }
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 20px;
   }
 
@@ -161,26 +158,26 @@
     background-color: $color-default-white;
     top: 15px;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       top: 0;
     }
   }
 
-  .checkbox__field:checked+.checkbox__check {
+  .checkbox__field:checked + .checkbox__check {
     background-color: $color-default-white;
   }
 
-  .checkbox__field:checked+.checkbox__check::after {
+  .checkbox__field:checked + .checkbox__check::after {
     background-color: $color-cerulean-blue;
   }
 
-  .checkbox__field:checked:hover:not(:invalid)+.checkbox__check,
-  .checkbox__field:checked:focus-visible:not(:invalid)+.checkbox__check {
+  .checkbox__field:checked:hover:not(:invalid) + .checkbox__check,
+  .checkbox__field:checked:focus-visible:not(:invalid) + .checkbox__check {
     background-color: $color-cerulean-blue;
   }
 
-  .checkbox__field:checked:hover:not(:invalid)+.checkbox__check::after,
-  .checkbox__field:checked:focus-visible:not(:invalid)+.checkbox__check::after {
+  .checkbox__field:checked:hover:not(:invalid) + .checkbox__check::after,
+  .checkbox__field:checked:focus-visible:not(:invalid) + .checkbox__check::after {
     background-color: $color-default-white;
   }
 }
