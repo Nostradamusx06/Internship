@@ -366,6 +366,7 @@
 }
 
 .programs__content-button {
+  outline: none;
   &::before {
     position: absolute;
     top: 60px;
@@ -381,6 +382,10 @@
 
     @media(min-width: $tablet-width) {
       top: 65px;
+    }
+
+    @media(min-width: $desktop-width) {
+      outline: thin;
     }
   }
 

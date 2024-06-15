@@ -35,7 +35,7 @@
   @media(min-width: $tablet-width) {
     flex-wrap: wrap;
 
-    width: fit-content;
+    width: max-content;
     padding-top: 30px;
     padding-left: 2px;
 
@@ -45,7 +45,7 @@
   @media(min-width: $desktop-width) {
     padding: 0;
     padding-top: 40px;
-
+    width: fit-content;
     gap: 30px;
   }
 }
@@ -97,6 +97,14 @@
 
   color: $color-cerulean-blue;
   border-color: $color-cerulean-blue;
+
+  @media(min-width: $tablet-width) {
+    padding: 8px 20.5px 9px 20px;
+  }
+
+  @media(min-width: $desktop-width) {
+    padding: 10px 14.5px 9px 14px;
+  }
 }
 
 .news__swiper.swiper {
@@ -221,6 +229,14 @@
 
     .news__content-wrapper p {
       width: 386px;
+    }
+
+    .news__content-button::before {
+      top: 15px;
+    }
+
+    .news__content-button::after {
+      top: 26px;
     }
   }
 }
@@ -612,13 +628,14 @@
 
 @media (min-width: $tablet-width) {
   .news__pagination-container>.news__pagination.pagination.swiper-pagination {
-    left: -46px;
-    max-width: 244px;
+    left: -66px;
+    max-width: 260px;
   }
 
   .news__pagination-container {
     width: 214px;
     min-height: 32px;
+    left: 289px;
   }
 
   .news__pagination.swiper-pagination-horizontal.swiper-pagination-bullets>.swiper-pagination-bullet {
@@ -628,7 +645,9 @@
 }
 
 @media (min-width: $desktop-width) {
-
+  .news__pagination-container {
+    left: 613px;
+  }
   .news__pagination-container>.news__pagination.pagination.swiper-pagination {
     left: -101px;
     max-width: 344px;

@@ -16,7 +16,7 @@
   &:focus-visible {
     &::after {
       transform: rotate(45deg);
-
+      transition: all 300ms ease;
       background-color: $color-default-white;
     }
   }

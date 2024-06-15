@@ -273,12 +273,13 @@
 }
 
 .faq__item:hover,
-.faq__item:focus-visible {
+.faq__item:focus-within {
   background-color: $color-default-white;
 
   .faq__accordion-button,
   .faq__accordion-button {
     background-color: $color-default-white;
+    outline: none;
   }
 
   .faq__accordion-button::before,
@@ -304,7 +305,7 @@
 }
 
 .faq__item.is-open:hover,
-.faq__item.is-open:focus-visible {
+.faq__item.is-open:focus-within {
   background-color: $color-cerulean-blue;
 
   .faq__accordion-button,
