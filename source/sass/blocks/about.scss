@@ -234,32 +234,14 @@
   &::before {
     position: absolute;
     z-index: 1;
-    top: -13px;
-    left: -9px;
+    top: -23px;
+    left: -21px;
 
-    width: 18px;
-    height: 22px;
-
+    width: 42px;
+    height: 42px;
+    background: #316dc2 url("/__spritemap#sprite-star-view") no-repeat center;
+    background-size: 22px 22px;
     content: "";
-
-    background-color: $color-default-white;
-
-    mask-image: url("../../img/sprite/star.svg");
-    mask-repeat: no-repeat;
-    mask-position: center;
-  }
-
-  &::after {
-    position: absolute;
-    top: -13px;
-    left: -9px;
-
-    width: 30px;
-    height: 32px;
-
-    content: "";
-
-    background-color: $color-cerulean-blue;
   }
 
   &:nth-child(2n),
