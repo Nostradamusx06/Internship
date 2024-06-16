@@ -1,12 +1,16 @@
 .faq__wrapper {
-  padding: 50px 15px 35px;
+  padding: 50px 0 35px;
+  margin: 0 auto;
+  max-width: 290px;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 45px;
+    padding: 50px 0;
+    max-width: 678px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 206px 55px;
+    padding: 60px 0 55px;
+    max-width: 1028px;
   }
 }
 
@@ -177,7 +181,7 @@
     }
 
     &:nth-child(4n) .faq__accordion-button {
-      top: 27px;
+      top: 40px;
     }
 
     &:nth-child(4n) .faq__question-title {
@@ -191,7 +195,7 @@
     }
 
     &:nth-child(5n) .faq__accordion-button {
-      top: 36px;
+      top: 40px;
     }
   }
 }

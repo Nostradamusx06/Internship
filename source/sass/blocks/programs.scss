@@ -3,9 +3,11 @@
 
   margin: 0 auto;
   padding: 55px 15px 50px;
+  max-width: 290px;
 
   @media (min-width: $tablet-width) {
     padding: 50px 0 50px 45px;
+    max-width: 723px;
   }
 
   @media (min-width: $desktop-width) {

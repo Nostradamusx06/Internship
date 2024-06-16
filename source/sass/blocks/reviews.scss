@@ -2,13 +2,17 @@
   position: relative;
 
   padding: 55px 15px 50px;
+  margin: 0 auto;
+  max-width: 290px;
 
   @media (min-width: $tablet-width) {
+    max-width: 723px;
     padding: 50px 0 50px 45px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 65px 100px 60px;
+    max-width: 1240px;
   }
 }
 
@@ -204,7 +208,7 @@
   }
 }
 
-.reviews__swiper-slide > p {
+.reviews__swiper-slide>p {
   font-size: $font-line-size-rat;
   font-weight: $regular;
   line-height: $font-line-size-dog;

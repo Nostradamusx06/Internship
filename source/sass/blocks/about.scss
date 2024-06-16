@@ -1,13 +1,16 @@
 .about__wrapper {
-  padding: 50px 15px;
+  padding: 50px 0;
   position: relative;
-
+  margin: 0 auto;
+max-width: 290px;
   @media (min-width: $tablet-width) {
-    padding: 50px 45px;
+    padding: 50px 0;
+    max-width: 678px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 63px 100px 60px;
+    max-width: 1240px;
   }
 }
 

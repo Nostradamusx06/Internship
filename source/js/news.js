@@ -29,12 +29,13 @@ const swiperNews = new Swiper('.news__swiper', {
   },
   breakpoints: {
     320: {
-      width: 290,
+      // width: 290,
       slidesPerGroup: 1,
       slidesPerView: 1,
       spaceBetween: 20,
       observer: true,
       observeParents: true,
+      autoHeight: false,
       grid: {
         rows: 2,
         fill: 'column',

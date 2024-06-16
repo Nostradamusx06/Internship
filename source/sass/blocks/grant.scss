@@ -1,15 +1,16 @@
 .grant {
-  padding: 70px 15px;
+  padding: 70px 0;
 
   color: $color-default-white;
   background-color: $color-cerulean-blue;
 
   @media (min-width: $tablet-width) {
-    padding: 100px 45px;
+    padding: 100px 0;
+
   }
 
   @media (min-width: $desktop-width) {
-    padding: 120px 100px;
+    padding: 120px 0;
   }
 }
 
@@ -17,11 +18,13 @@
 .grant__wrapper {
   display: flex;
   flex-direction: column;
-
+  max-width: 290px;
+  margin: 0 auto;
   row-gap: 30px;
 
   @media (min-width: $tablet-width) {
     row-gap: 40px;
+    max-width: 678px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,8 +33,8 @@
     grid-template-columns: repeat(2, 498px);
     row-gap: 0;
     column-gap: 138px;
-    margin: 0 auto;
     width: 1240px;
+    padding-right: 562px;
   }
 }
 
