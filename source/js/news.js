@@ -29,7 +29,6 @@ const swiperNews = new Swiper('.news__swiper', {
   },
   breakpoints: {
     320: {
-      // width: 290,
       slidesPerGroup: 1,
       slidesPerView: 1,
       spaceBetween: 20,

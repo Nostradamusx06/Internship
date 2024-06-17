@@ -2,6 +2,7 @@
   padding: 50px 0 35px;
   margin: 0 auto;
   max-width: 290px;
+  word-break: break-word;
 
   @media (min-width: $tablet-width) {
     padding: 50px 0;
@@ -143,7 +144,6 @@
     top: 36px;
   }
 
-  // .faq__accordion-button
 
   @media (min-width: $tablet-width) {
     padding: 37px 42px 37px 30px;
@@ -159,8 +159,6 @@
     }
 
     &:nth-child(4n) .faq__question-title {
-      // .faq__question-title
-
       width: 410px;
     }
 
@@ -185,8 +183,6 @@
     }
 
     &:nth-child(4n) .faq__question-title {
-      // .faq__question-title
-
       width: 775px;
     }
 

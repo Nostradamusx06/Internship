@@ -2,7 +2,6 @@ import Swiper from 'swiper';
 import { Scrollbar, Navigation } from 'swiper/modules';
 
 const swiperPrograms = new Swiper('.programs__swiper', {
-  autoHeight: true,
   watchSlidesProgress: true,
   modules: [Scrollbar, Navigation],
   scrollbar: {

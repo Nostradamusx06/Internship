@@ -14,14 +14,13 @@ import { Pagination } from 'swiper/modules';
         el: '.swiper-pagination',
         clickable: true,
         type: 'bullets',
+        bulletClass: 'slider__pagination-button',
+        bulletActiveClass: 'slider__pagination-button--active',
         bulletElement: 'button',
-        bulletClass: 'slider__pagination-bullet',
-        bulletActiveClass: 'is-active',
       },
       loop: true,
       slidesPerView: 1,
       spaceBetween: 0,
-      autoHeight: true,
       watchSlidesProgress: true,
       updateOnWindowResize: true,
 
@@ -32,6 +31,19 @@ import { Pagination } from 'swiper/modules';
         },
       },
     });
+
+    const addButtonDescription = () => {
+      const numbers = ['Первый', 'Второй', 'Третий', 'Четвертый', 'Пятый', 'Шестой', 'Седьмой', 'Восьмой'];
+      const paginationButtons = heroWrapper.querySelectorAll('.slider__pagination .slider__pagination-button');
+      for (let i = 0; i < paginationButtons.length; i++) {
+        const descriptionElement = document.createElement('span');
+        descriptionElement.classList.add('visually-hidden');
+        descriptionElement.textContent = `${numbers[i]} слайда промо.`;
+        paginationButtons[i].append(descriptionElement);
+      }
+    };
+
+    addButtonDescription();
 
     const setButtonTabIndex = () => {
       swiperLinks.forEach((link) => {

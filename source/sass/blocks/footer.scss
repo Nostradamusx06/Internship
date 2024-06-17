@@ -2,7 +2,8 @@
   width: 286px;
   margin: 0 auto;
   padding: 38px 15px 40px 17px;
-
+  word-break: break-word;
+  min-height: 80px;
   @media (min-width: $tablet-width) {
     width: 678px;
     padding: 38px 45px 39px;

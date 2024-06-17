@@ -1,5 +1,6 @@
 .slider {
   position: relative;
+  min-height: 500px;
 }
 
 .slider__swiper.swiper {
@@ -14,6 +15,7 @@
 }
 
 .slider__swiper-slide {
+  word-break: break-word;
   position: relative;
   min-height: 568px;
   width: 100%;
@@ -36,7 +38,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-
+    z-index: -1;
     content: "";
 
     background-color: rgba($color-cerulean-blue, 0.2);
@@ -80,31 +82,20 @@
 }
 
 .slider__container {
-  position: absolute;
-  z-index: 1;
-  top: 229px;
-  right: 0;
-  left: 0;
-
   width: 100%;
   max-width: 320px;
   margin: 0 auto;
-  padding-left: 15px;
+  padding: 229px 15px 20px;
+
 
   @media (min-width: $tablet-width) {
-    top: 687px;
-
     max-width: 768px;
-    padding-right: 45px;
-    padding-left: 45px;
+    padding: 687px 45px 60px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 433px;
-
     max-width: 1440px;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding: 433px 100px 60px;
   }
 }
 
@@ -238,7 +229,7 @@
   line-height: $font-line-size-mouse;
 
   position: relative;
-
+  max-width: 200px;
   padding: 13px 58px 12px 20px;
 
   letter-spacing: 0.28px;
@@ -252,7 +243,7 @@
   @media (min-width: $tablet-width) {
     font-size: $font-line-size-rat;
     line-height: $font-line-size-rat;
-
+    max-width: 101px;
     display: inline-block;
 
     padding: 19px 80px 21px 30px;
@@ -260,6 +251,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 21px 81px 21px 30px;
+    max-width: 200px;
   }
 
   &::before {
@@ -379,7 +371,7 @@
   z-index: 2;
   margin: 0 auto;
 
-  @media (width >= 321px) {
+  @media (width >=321px) {
     left: -15px;
   }
 
@@ -389,7 +381,7 @@
     left: 45px;
   }
 
-  @media (width >= 769px) {
+  @media (width >=769px) {
     left: 0;
   }
 
@@ -399,11 +391,11 @@
     left: 100px;
   }
 
-  @media (width >= 1540px) {
+  @media (width >=1540px) {
     left: 100px;
   }
 
-  @media (width >= 1660px) {
+  @media (width >=1660px) {
     left: 0;
   }
 }
@@ -461,7 +453,7 @@
   }
 }
 
-.slider__pagination .slider__pagination-bullet {
+.slider__pagination-button {
   width: 8px;
   height: 8px;
 
@@ -487,9 +479,14 @@
   &:focus-within {
     background-color: $color-cerulean-blue;
   }
+
+  &:active {
+    border-color: $color-endeavour;
+    background-color: $color-endeavour;
+  }
 }
 
-.slider__pagination .slider__pagination-bullet.is-active {
+.slider__pagination-button--active {
   border-color: $color-endeavour;
   background-color: $color-endeavour;
 }

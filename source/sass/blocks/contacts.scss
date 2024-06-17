@@ -1,7 +1,8 @@
 .contacts {
   padding: 76px 15px 70px;
-
+  word-break: break-word;
   background-color: $color-cerulean-blue;
+  min-height: 500px;
 
   @media (min-width: $tablet-width) {
     padding: 100px 45px;
@@ -36,7 +37,7 @@
 
   margin: 0;
   padding: 0;
-
+  flex-wrap: wrap;
   list-style-type: none;
 
   gap: 21px;
@@ -85,7 +86,7 @@
 
 .contacts__heading {
   font-size: $font-line-size-mouse;
-  font-weight: 400;
+  font-weight: $regular;
   line-height: $font-line-size-mouse;
 
   margin: 0;

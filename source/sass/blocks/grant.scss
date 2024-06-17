@@ -1,12 +1,12 @@
 .grant {
   padding: 70px 0;
-
+  word-break: break-word;
   color: $color-default-white;
   background-color: $color-cerulean-blue;
+  min-height: 400px;
 
   @media (min-width: $tablet-width) {
     padding: 100px 0;
-
   }
 
   @media (min-width: $desktop-width) {

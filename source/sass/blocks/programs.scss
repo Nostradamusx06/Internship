@@ -1,9 +1,10 @@
 .programs__wrapper {
   position: relative;
-
+  word-break: break-word;
   margin: 0 auto;
   padding: 55px 15px 50px;
   max-width: 290px;
+  min-height: 500px;
 
   @media (min-width: $tablet-width) {
     padding: 50px 0 50px 45px;
@@ -32,6 +33,11 @@
 .programs__title {
   @media (min-width: $tablet-width) {
     padding-top: 3px;
+    max-width: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 750px;
   }
 }
 
@@ -43,7 +49,7 @@
   position: absolute;
   bottom: 48px;
   left: 15px;
-
+  height: max-content;
   padding: 16px 68px 14px 30px;
 
   letter-spacing: 0.28px;
@@ -151,10 +157,10 @@
 
 .programs__slide.swiper-slide {
   position: relative;
-
+  background-size: cover;
   max-width: 324px;
   min-height: 400px;
-
+  height: auto;
   border-radius: 12px;
 
   @media (min-width: $tablet-width) {
@@ -174,7 +180,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-
+    z-index: -1;
     width: 290px;
 
     content: "";
@@ -237,7 +243,7 @@
     padding: 26px 18px 15px;
 
     @media (min-width: $tablet-width) {
-      padding: 12px 39px 15px 18px;
+      padding: 12px 18px 15px 18px;
     }
 
     @media (min-width: $desktop-width) {
@@ -247,19 +253,22 @@
 }
 
 .programs__content {
-  position: absolute;
-  z-index: 1;
-  bottom: 18px;
-  left: 10px;
+  margin: 0 auto;
+  max-width: 270px;
+  padding-top: 271px;
+  padding-bottom: 16px;
 
   @media (min-width: $tablet-width) {
-    bottom: 10px;
-    left: 20px;
+    padding-top: 285px;
+    padding-bottom: 10px;
+    max-width: 284px;
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 17px;
-    left: 20px;
+    margin: 0;
+    padding: 0;
+    padding-top: 263px;
+    max-width: 320px;
   }
 }
 
@@ -275,11 +284,13 @@
   gap: 16px;
 
   @media (min-width: $tablet-width) {
-    padding: 11px 39px 16px 18px;
+    padding: 11px 18px 16px 18px;
+    gap: 22px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 12px 18px 16px;
+    max-width: 285px;
   }
 
   span {
@@ -356,7 +367,7 @@
     font-size: $font-line-size-rat;
     line-height: $font-line-size-dog;
 
-    width: 181px;
+    width: 196px;
   }
 
   @media (min-width: $desktop-width) {
@@ -368,11 +379,10 @@
 
 .programs__content-button {
   outline: none;
+  position: relative;
 
   &::before {
     position: absolute;
-    top: 60px;
-    right: 18px;
 
     width: 30px;
     height: 31px;
@@ -382,10 +392,6 @@
     border-radius: 44px;
     background-color: $color-cerulean-blue;
 
-    @media (min-width: $tablet-width) {
-      top: 65px;
-    }
-
     @media (min-width: $desktop-width) {
       outline: thin;
     }
@@ -393,9 +399,8 @@
 
   &::after {
     position: absolute;
-    top: 71px;
-    right: 29px;
-
+    top: 11px;
+    right: 11px;
     width: 8px;
     height: 8px;
 
@@ -406,11 +411,6 @@
     mask-image: url("/__spritemap#sprite-button-arrow-view");
     mask-repeat: no-repeat;
     mask-size: cover;
-
-    @media (min-width: $tablet-width) {
-      top: 76px;
-      right: 29px;
-    }
   }
 }
 
@@ -469,7 +469,7 @@
 
   display: flex;
 
-  top: 48px;
+  top: 53px;
   right: 15px;
   gap: 8px;
 

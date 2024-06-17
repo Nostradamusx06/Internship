@@ -14,31 +14,6 @@
       margin-bottom: 11px;
     }
   }
-
-  &::after {
-    position: absolute;
-    z-index: 2;
-    top: 36px;
-    right: 20px;
-
-    width: 16px;
-    height: 16px;
-
-    content: "";
-
-    mask-image: url("/__spritemap#sprite-arrow-down-view");
-    mask-repeat: no-repeat;
-    mask-position: center;
-    cursor: pointer;
-
-    @media (min-width: $tablet-width) {
-      top: 49px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 47px;
-    }
-  }
 }
 
 .select__field {
@@ -55,6 +30,7 @@
   cursor: pointer;
   margin: 0;
 
+
   @media (min-width: $tablet-width) {
     width: 321px;
   }
@@ -63,10 +39,7 @@
     width: 326px;
     height: 48px;
   }
-}
 
-.select:has(.select__field--shown)::after {
-  mask-image: url("/__spritemap#sprite-arrow-view");
 }
 
 .select__dropdown {
@@ -130,6 +103,12 @@
   .select__field {
     color: $color-charcoal;
     border: 1px solid rgba($color-charcoal, 0.3);
+    background: url("/__spritemap#sprite-arrow-black-down-view") no-repeat calc(100% - 20px) center;
+    background-size: 16px 16px;
+  }
+  .select__field--shown {
+    background: url("/__spritemap#sprite-arrow-black-view") no-repeat calc(100% - 20px) center;
+    background-size: 16px 16px;
   }
 
   .select__dropdown {
@@ -140,24 +119,16 @@
 }
 
 .select--form {
-  &::after {
-    background-color: $color-default-white;
-    top: 43px;
-    right: 31px;
-
-    @media (min-width: $tablet-width) {
-      top: 50px;
-      right: 21px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 47px;
-    }
-  }
-
   .select__field {
     color: $color-default-white;
     border: 1px solid rgba($color-default-white, 0.3);
+    background: url("/__spritemap#sprite-arrow-down-view") no-repeat calc(100% - 20px) center;
+    background-size: 16px 16px;
+  }
+
+  .select__field--shown {
+    background: url("/__spritemap#sprite-arrow-view") no-repeat calc(100% - 20px) center;
+    background-size: 16px 16px;
   }
 
   .select__dropdown {

@@ -2,7 +2,10 @@
   padding: 50px 0;
   position: relative;
   margin: 0 auto;
-max-width: 290px;
+  max-width: 290px;
+  word-break: break-word;
+  min-height: 400px;
+
   @media (min-width: $tablet-width) {
     padding: 50px 0;
     max-width: 678px;

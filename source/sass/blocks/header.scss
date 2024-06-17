@@ -117,7 +117,7 @@
 
   display: flex;
   align-items: center;
-
+  word-break: break-word;
   margin: 0;
   padding: 10px 0;
 
@@ -231,10 +231,10 @@
 
   position: relative;
   z-index: 2;
-
+  max-width: 500px;
   min-width: 136px;
   min-height: 54px;
-  padding: 2px 3px 3px 20px;
+  padding: 10px 61px 10px 20px;
 
   transition: width 0.3s ease-in, background-color 0.2s ease;
   text-align: left;
@@ -268,7 +268,7 @@
     color: rgba($color-default-white, 0.7);
 
     &:hover {
-      background-color: inherit;
+      background-color: $color-cerulean-blue;
     }
 
     &::after {

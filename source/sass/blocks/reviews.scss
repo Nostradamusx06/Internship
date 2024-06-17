@@ -4,6 +4,7 @@
   padding: 55px 15px 50px;
   margin: 0 auto;
   max-width: 290px;
+  min-height: 500px;
 
   @media (min-width: $tablet-width) {
     max-width: 723px;
@@ -48,23 +49,23 @@
 }
 
 .reviews__swiper-slide.swiper-slide {
-  height: 386px;
+  min-height: 386px;
   max-width: 245px;
   padding: 30px 26px 52px 15px;
-
+  height: auto;
   border: 2px solid $color-cerulean-blue;
   border-radius: 16px;
 
   @media (min-width: $tablet-width) {
     max-width: 461px;
-    height: 311px;
+    min-height: 311px;
     padding: 50px 45px 52px 50px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 505px;
-    height: 377px;
-    padding: 50px 45px 52px 50px;
+    min-height: 379px;
+    padding: 50px 45px 50px 50px;
   }
 }
 
@@ -91,6 +92,7 @@
 
   @media (min-width: $desktop-width) {
     padding-right: 2px;
+    gap: 36px;
   }
 }
 
