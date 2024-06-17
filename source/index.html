@@ -19,15 +19,14 @@
 <body class="page-body">
   <main>
     <section class="hero" data-test="hero">
+      <h1 class="visually-hidden">Internship programs</h1>
       <div class="hero__header header">
         <div class="header__wrapper">
-          <h1 class="visually-hidden">Internship programs</h1>
+          <div class="header__logo">
+            <img src="img/logo/logo.svg" width="30" height="30" alt="Логотип сайта Internship.">
+          </div>
+
           <nav class="header__nav">
-
-            <div class="header__logo">
-              <img src="img/logo/logo.svg" width="30" height="30" alt="Логотип сайта Internship.">
-            </div>
-
             <button class="header__button button" type="button">Меню</button>
 
             <div class="header__menu-wrapper header__menu-wrapper--closed">
@@ -92,7 +91,6 @@
             </div>
           </nav>
         </div>
-        <div class="header__overlay"></div>
       </div>
       <div class="hero__slider slider">
         <div class="slider__swiper swiper">
@@ -199,48 +197,51 @@
         </ul>
       </div>
 
-      <div class="about__modal modal">
-        <button class="modal__close-button" type="button">
-          <span class="visually-hidden">Закрыть окно.</span>
-        </button>
-        <h2 class="modal__title">Напишите нам</h2>
-        <p class="modal__description">Оставьте ваши контакты, <span>если у вас остались вопросы –</span>
-          мы на них ответим!</p>
-        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="about__overlay">
+        <div class="about__modal modal">
+          <button class="modal__close-button" type="button">
+            <span class="visually-hidden">Закрыть окно.</span>
+          </button>
+          <h2 class="modal__title">Напишите нам</h2>
+          <p class="modal__description">Оставьте ваши контакты, <span>если у вас остались вопросы –</span>
+            мы на них ответим!</p>
+          <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
 
-          <div class="modal__input-wrapper">
-            <input class="modal__field" type="text" name="name" id="modal-name" required>
-            <label class="modal__label" for="modal-name">Имя</label>
-          </div>
+            <div class="modal__input-wrapper">
+              <input class="modal__field" type="text" name="name" id="modal-name" required>
+              <label class="modal__label" for="modal-name">Имя</label>
+            </div>
 
-          <div class="modal__input-wrapper">
-            <input class="modal__field" type="tel" name="phone" id="modal-phone" required>
-            <label class="modal__label" for="modal-phone">Телефон</label>
-          </div>
+            <div class="modal__input-wrapper">
+              <input class="modal__field" type="tel" name="phone" id="modal-phone" required>
+              <label class="modal__label" for="modal-phone">Телефон</label>
+            </div>
 
 
-          <div class="modal__select select select--modal">
-            <input class="modal__field select__field" id="modal-city" name="city" type="text" autocomplete="off"
-              required>
-            <label class="modal__label" for="modal-city">Выберите город</label>
-            <ul class="select__dropdown" id="select-modal">
-              <li class="select__option">&nbsp;</li>
-              <li class="select__option">Санкт-Петербург</li>
-              <li class="select__option">Санкт-Петербург</li>
-              <li class="select__option">Санкт-Петербург</li>
-              <li class="select__option">Санкт-Петербург</li>
-            </ul>
-          </div>
+            <div class="modal__select select select--modal">
+              <input class="modal__field select__field" id="modal-city" name="city" type="text" autocomplete="off"
+                required>
+              <label class="modal__label" for="modal-city">Выберите город</label>
+              <ul class="select__dropdown" id="select-modal">
+                <li class="select__option">&nbsp;</li>
+                <li class="select__option">Санкт-Петербург</li>
+                <li class="select__option">Санкт-Петербург</li>
+                <li class="select__option">Санкт-Петербург</li>
+                <li class="select__option">Санкт-Петербург</li>
+              </ul>
+            </div>
 
-          <label class="modal__checkbox checkbox checkbox--modal">
-            <input class="checkbox__field visually-hidden" type="checkbox" name="permission" id="permission-modal"
-              required>
-            <span class="checkbox__check"></span>
-            <span class="checkbox__text">Я согласен на обработку моих персональных данных</span>
-          </label>
+            <label class="modal__checkbox checkbox checkbox--modal">
+              <input class="checkbox__field visually-hidden" type="checkbox" name="permission" id="permission-modal"
+                required>
+              <span class="checkbox__check"></span>
+              <span class="checkbox__text">Я согласен на обработку моих персональных данных</span>
+            </label>
 
-          <button class="modal__submit-button button button--light" type="submit">Отправить</button>
-        </form>
+            <button class="modal__submit-button button button--light" type="submit">Отправить</button>
+          </form>
+          <div class="modal__overlay"></div>
+        </div>
       </div>
     </section>
 
