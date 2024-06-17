@@ -373,7 +373,7 @@
   z-index: 2;
   margin: 0 auto;
 
-  @media (width >=321px) {
+  @media (width >= 321px) {
     left: -15px;
   }
 
@@ -383,7 +383,7 @@
     left: 45px;
   }
 
-  @media (width >=769px) {
+  @media (width >= 769px) {
     left: 0;
   }
 
@@ -393,11 +393,11 @@
     left: 100px;
   }
 
-  @media (width >=1540px) {
+  @media (width >= 1540px) {
     left: 100px;
   }
 
-  @media (width >=1660px) {
+  @media (width >= 1660px) {
     left: 0;
   }
 }

@@ -15,7 +15,6 @@
 }
 
 .form__wrapper {
-  background-size: 100%;
   background-color: $color-mischka;
   background-repeat: no-repeat;
   background-size: cover;
@@ -163,7 +162,7 @@
   pointer-events: none;
 }
 
-.form__field:disabled+.form__label-text {
+.form__field:disabled + .form__label-text {
   color: rgba($color-mischka, 0.6);
 }
 
@@ -174,7 +173,7 @@
   user-select: none;
 }
 
-.form__field:disabled+.form__label {
+.form__field:disabled + .form__label {
   color: rgba($color-mischka, 0.6);
 }
 
@@ -261,9 +260,9 @@
 }
 
 .form__field:hover:not(:disabled),
-.form__field:hover:not(:disabled)+.form__label,
+.form__field:hover:not(:disabled) + .form__label,
 .form__field:focus:not(:disabled),
-.form__field:focus:not(:disabled)+.form__label {
+.form__field:focus:not(:disabled) + .form__label {
   border-color: rgba($color-default-white, 1);
   opacity: 1;
 }
