@@ -1,12 +1,17 @@
 .faq__wrapper {
-  padding: 50px 15px 35px;
+  padding: 50px 0 35px;
+  margin: 0 auto;
+  max-width: 290px;
+  word-break: break-word;
 
-  @media(min-width: $tablet-width) {
-    padding: 50px 45px;
+  @media (min-width: $tablet-width) {
+    padding: 50px 0;
+    max-width: 678px;
   }
 
-  @media(min-width: $desktop-width) {
-    padding: 60px 206px 55px;
+  @media (min-width: $desktop-width) {
+    padding: 60px 0 55px;
+    max-width: 1028px;
   }
 }
 
@@ -15,7 +20,7 @@
 
   text-align: center;
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 11px;
   }
 }
@@ -32,11 +37,11 @@
 
   gap: 10px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 40px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 71px;
   }
 }
@@ -53,14 +58,14 @@
 
   color: $color-cerulean-blue;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: $font-line-size-wolf;
     line-height: $font-line-size-moose;
 
     width: 470px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     font-size: $font-line-size-bear;
     line-height: $font-line-size-hippo;
 
@@ -84,11 +89,11 @@
 
     color: $color-alabaster;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       font-size: $font-line-size-rabbit;
     }
 
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       line-height: $font-line-size-moose;
     }
   }
@@ -102,11 +107,11 @@
 
   opacity: 1;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 27px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 22px;
   }
 }
@@ -139,9 +144,8 @@
     top: 36px;
   }
 
-  // .faq__accordion-button
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 37px 42px 37px 30px;
 
     border-radius: 16px;
@@ -155,8 +159,6 @@
     }
 
     &:nth-child(4n) .faq__question-title {
-      // .faq__question-title
-
       width: 410px;
     }
 
@@ -169,20 +171,18 @@
     }
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 44px 42px 42px 40px;
 
     &:nth-child(4n) {
       padding: 41px 42px 39px 40px;
-
     }
+
     &:nth-child(4n) .faq__accordion-button {
-      top: 27px;
+      top: 40px;
     }
 
     &:nth-child(4n) .faq__question-title {
-      // .faq__question-title
-
       width: 775px;
     }
 
@@ -191,7 +191,7 @@
     }
 
     &:nth-child(5n) .faq__accordion-button {
-      top: 36px;
+      top: 40px;
     }
   }
 }
@@ -201,11 +201,11 @@
 
   background-color: $color-cerulean-blue;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-bottom: 30px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-bottom: 40px;
   }
 
@@ -214,7 +214,7 @@
   }
 
   .faq__accordion-button {
-    background-color: $color-default-white
+    background-color: $color-default-white;
   }
 
   .faq__accordion-button::before,
@@ -261,24 +261,24 @@
     height: 18px;
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     top: 30px;
     right: 30px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     top: 40px;
     right: 40px;
   }
 }
 
 .faq__item:hover,
-.faq__item:focus-visible {
+.faq__item:focus-within {
   background-color: $color-default-white;
 
-  .faq__accordion-button,
   .faq__accordion-button {
     background-color: $color-default-white;
+    outline: none;
   }
 
   .faq__accordion-button::before,
@@ -292,7 +292,6 @@
     color: $color-endeavour;
   }
 
-  .faq__accordion-button,
   .faq__accordion-button {
     background-color: $color-endeavour;
   }
@@ -304,10 +303,9 @@
 }
 
 .faq__item.is-open:hover,
-.faq__item.is-open:focus-visible {
+.faq__item.is-open:focus-within {
   background-color: $color-cerulean-blue;
 
-  .faq__accordion-button,
   .faq__accordion-button {
     border-color: $color-default-white;
     background-color: $color-cerulean-blue;
@@ -323,16 +321,15 @@
   background-color: $color-endeavour;
 
   .faq__question-title {
-    color: $color-default-white
+    color: $color-default-white;
   }
 
-  .faq__accordion-button,
   .faq__accordion-button {
     background-color: $color-default-white;
   }
 
   .faq__accordion-button::before,
   .faq__accordion-button::after {
-    background-color: $color-cerulean-blue
+    background-color: $color-cerulean-blue;
   }
 }

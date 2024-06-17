@@ -46,6 +46,8 @@
         evt.preventDefault();
         selectInput.classList.add('select__field--shown');
         selectList.classList.add('select__dropdown--shown');
+      } else if (evt.key !== 'Tab') {
+        evt.preventDefault();
       }
     });
 

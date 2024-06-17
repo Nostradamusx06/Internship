@@ -7,7 +7,9 @@
   <meta name="description" content="Сайт с набором стажировок для людей до 30-и лет">
   <title>Internship programs</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="preload" href="fonts/Manrope-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Manrope-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Manrope-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -17,15 +19,14 @@
 <body class="page-body">
   <main>
     <section class="hero" data-test="hero">
+      <h1 class="visually-hidden">Internship programs</h1>
       <div class="hero__header header">
         <div class="header__wrapper">
-          <h1 class="visually-hidden">Internship programs</h1>
+          <div class="header__logo">
+            <img src="img/logo/logo.svg" width="30" height="30" alt="Логотип сайта Internship.">
+          </div>
+
           <nav class="header__nav">
-
-            <div class="header__logo" href="#">
-              <img src="img/logo/logo.svg" width="30" height="30" alt="Логотип сайта Internship.">
-            </div>
-
             <button class="header__button button" type="button">Меню</button>
 
             <div class="header__menu-wrapper header__menu-wrapper--closed">
@@ -90,114 +91,70 @@
             </div>
           </nav>
         </div>
-        <div class="header__overlay"></div>
       </div>
       <div class="hero__slider slider">
         <div class="slider__swiper swiper">
+          <div class="slider__pagination-container">
+            <div class="slider__pagination swiper-pagination">
+              <button class="slider__pagination-button slider__pagination-button--active" type="button">
+                <span class="visually-hidden">Первый слайд промо.</span>
+              </button>
+              <button class="slider__pagination-button" type="button">
+                <span class="visually-hidden">Второй слайд промо.</span>
+              </button>
+              <button class="slider__pagination-button" type="button">
+                <span class="visually-hidden">Третий слайд промо.</span>
+              </button>
+            </div>
+          </div>
           <ul class="slider__swiper-wrapper swiper-wrapper">
-            <li class="slider__swiper-slide swiper-slide">
+            <li class="slider__swiper-slide slider__swiper-slide--education swiper-slide">
               <div class="slider__container">
                 <h2 class="slider__title">Глобальный профессиональный опыт обучения за рубежом</h2>
                 <div class="slider__content">
-                  <p>Погрузитесь в академическую программу, проходя практику <span>в разных</span> городах, ощущая
-                    настоящий
-                    студенческий стиль жизни!</p>
-
+                  <div class="slider__content-text">
+                    <p>Погрузитесь в академическую программу, проходя практику <span>в разных</span> городах, ощущая
+                      настоящий
+                      студенческий стиль жизни!</p>
+                  </div>
                   <div class="slider__button-wrapper">
                     <a class="slider__button button button--light" href="#">Подробнее</a>
                   </div>
                 </div>
               </div>
-
-              <div class="slider__background">
-                <picture class="slider__background-picture">
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero/hero-desktop-first@1x.webp 1x,
-              img/hero/hero-desktop-first@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/hero/hero-tablet-first@1x.webp 1x,
-              img/hero/hero-tablet-first@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 320px)" srcset="img/hero/hero-mobile-first@1x.webp 1x,
-              img/hero/hero-mobile-first@2x.webp 2x">
-
-                  <source type="image/png" media="(min-width: 1440px)" srcset="img/hero/hero-desktop-first@1x.jpg 1x,
-              img/hero/hero-desktop-first@2x.jpg 2x">
-                  <source type="image/png" media="(min-width: 768px)" srcset="img/hero/hero-tablet-first@1x.jpg 1x,
-              img/hero/hero-tablet-first@2x.jpg 2x">
-                  <img class="slider__background-img" src="img/hero/hero-mobile-first@1x.jpg"
-                    srcset="img/hero/hero-mobile-first@2x.jpg 2x" alt="Улыбающаяся женщина с книгами в руках."
-                    width="1440" height="800">
-                </picture>
-              </div>
             </li>
 
-            <li class="slider__swiper-slide swiper-slide">
+            <li class="slider__swiper-slide slider__swiper-slide--volunteering swiper-slide">
               <div class="slider__container">
                 <h2 class="slider__title">Волонтёрские программы – внесите свой вклад в общество</h2>
                 <div class="slider__content">
-                  <p>Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни
-                    и другое.</p>
+                  <div class="slider__content-text">
+                    <p>Возможности для преподавания, органического сельского хозяйства, устойчивого образа жизни
+                      и другое.</p>
+                  </div>
                   <div class="slider__button-wrapper">
                     <a class="slider__button button button--light" href="#">Подробнее</a>
                   </div>
                 </div>
               </div>
-
-              <div class="slider__background">
-                <picture class="slider__background-picture">
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero/hero-desktop-second@1x.webp 1x,
-              img/hero/hero-desktop-second@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/hero/hero-tablet-second@1x.webp 1x,
-              img/hero/hero-tablet-second@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 320px)" srcset="img/hero/hero-mobile-second@1x.webp 1x,
-              img/hero/hero-mobile-second@2x.webp 2x">
-
-                  <source type="image/png" media="(min-width: 1440px)" srcset="img/hero/hero-desktop-second@1x.jpg 1x,
-              img/hero/hero-desktop-second@2x.jpg 2x">
-                  <source type="image/png" media="(min-width: 768px)" srcset="img/hero/hero-tablet-second@1x.jpg 1x,
-              img/hero/hero-tablet-second@2x.jpg 2x">
-                  <img class="slider__background-img" src="img/hero/hero-mobile-second@1x.jpg"
-                    srcset="img/hero/hero-mobile-second@2x.jpg 2x" alt="Группа людей позирует для фотографии."
-                    width="1440" height="800">
-                </picture>
-              </div>
             </li>
 
-            <li class="slider__swiper-slide swiper-slide">
+            <li class="slider__swiper-slide slider__swiper-slide--internship swiper-slide">
 
               <div class="slider__container">
                 <h2 class="slider__title">Программы стажировок в крупнейших компаниях мира</h2>
                 <div class="slider__content">
-                  <p>Получите незаменимый опыт работы в ведущих мировых компаниях и государственных
-                    организациях.</p>
+                  <div class="slider__content-text">
+                    <p>Получите незаменимый опыт работы в ведущих мировых компаниях и государственных
+                      организациях.</p>
+                  </div>
                   <div class="slider__button-wrapper">
                     <a class="slider__button button button--light" href="#">Подробнее</a>
                   </div>
                 </div>
               </div>
-
-              <div class="slider__background">
-                <picture class="slider__background-picture">
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero/hero-desktop-third@1x.webp 1x,
-              img/hero/hero-desktop-third@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/hero/hero-tablet-third@1x.webp 1x,
-              img/hero/hero-tablet-third@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 320px)" srcset="img/hero/hero-mobile-third@1x.webp 1x,
-              img/hero/hero-mobile-third@2x.webp 2x">
-
-                  <source type="image/png" media="(min-width: 1440px)" srcset="img/hero/hero-desktop-third@1x.jpg 1x,
-              img/hero/hero-desktop-third@2x.jpg 2x">
-                  <source type="image/png" media="(min-width: 768px)" srcset="img/hero/hero-tablet-third@1x.jpg 1x,
-              img/hero/hero-tablet-third@2x.jpg 2x">
-                  <img class="slider__background-img" src="img/hero/hero-mobile-third@1x.jpg"
-                    srcset="img/hero/hero-mobile-third@2x.jpg 2x" alt="Группа людей, просматривающих документы."
-                    width="1440" height="800">
-                </picture>
-              </div>
             </li>
           </ul>
-
-          <div class="slider__pagination-container">
-            <div class="slider__pagination swiper-pagination"></div>
-          </div>
         </div>
       </div>
     </section>
@@ -245,47 +202,51 @@
         </ul>
       </div>
 
-      <div class="about__modal modal">
-        <button class="modal__close-button" type="button">
-          <span class="visually-hidden">Закрыть окно.</span>
-        </button>
-        <h2 class="modal__title">Напишите нам</h2>
-        <p class="modal__description">Оставьте ваши контакты, <span>если у вас остались вопросы –</span>
-          мы на них ответим!</p>
-        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="about__overlay">
+        <div class="about__modal modal">
+          <button class="modal__close-button" type="button">
+            <span class="visually-hidden">Закрыть окно.</span>
+          </button>
+          <h2 class="modal__title">Напишите нам</h2>
+          <p class="modal__description">Оставьте ваши контакты, <span>если у вас остались вопросы –</span>
+            мы на них ответим!</p>
+          <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
 
-          <div class="modal__input-wrapper">
-            <input class="modal__field" type="text" name="name" id="name" required>
-            <label class="modal__label" for="name">Имя</label>
-          </div>
+            <div class="modal__input-wrapper">
+              <input class="modal__field" type="text" name="name" id="modal-name" required>
+              <label class="modal__label" for="modal-name">Имя</label>
+            </div>
 
-          <div class="modal__input-wrapper">
-            <input class="modal__field" type="tel" name="phone" id="phone" required>
-            <label class="modal__label" for="phone">Телефон</label>
-          </div>
+            <div class="modal__input-wrapper">
+              <input class="modal__field" type="tel" name="phone" id="modal-phone" required>
+              <label class="modal__label" for="modal-phone">Телефон</label>
+            </div>
 
 
-          <div class="modal__select select select--modal">
-            <input class="modal__field select__field" id="city" name="city" type="text" minlength="2" value=" "
-              readonly>
-            <label class="modal__label" for="city">Выберите город</label>
-            <ul class="select__dropdown" id="select-modal">
-              <li class="select__option">Санкт-Петербург</li>
-              <li class="select__option">Санкт-Петербург</li>
-              <li class="select__option">Санкт-Петербург</li>
-              <li class="select__option">Санкт-Петербург</li>
-            </ul>
-          </div>
+            <div class="modal__select select select--modal">
+              <input class="modal__field select__field" id="modal-city" name="city" type="text" autocomplete="off"
+                required>
+              <label class="modal__label" for="modal-city">Выберите город</label>
+              <ul class="select__dropdown" id="select-modal">
+                <li class="select__option">&nbsp;</li>
+                <li class="select__option">Санкт-Петербург</li>
+                <li class="select__option">Санкт-Петербург</li>
+                <li class="select__option">Санкт-Петербург</li>
+                <li class="select__option">Санкт-Петербург</li>
+              </ul>
+            </div>
 
-          <label class="modal__checkbox checkbox checkbox--modal" for="permission-modal">
-            <input class="checkbox__field visually-hidden" type="checkbox" name="permission" id="permission-modal"
-              required>
-            <span class="checkbox__check"></span>
-            <span class="checkbox__text">Я согласен на обработку моих персональных данных</span>
-          </label>
+            <label class="modal__checkbox checkbox checkbox--modal">
+              <input class="checkbox__field visually-hidden" type="checkbox" name="permission" id="permission-modal"
+                required>
+              <span class="checkbox__check"></span>
+              <span class="checkbox__text">Я согласен на обработку моих персональных данных</span>
+            </label>
 
-          <button class="modal__submit-button button button--light" type="submit">Отправить</button>
-        </form>
+            <button class="modal__submit-button button button--light" type="submit">Отправить</button>
+          </form>
+          <div class="modal__overlay"></div>
+        </div>
       </div>
     </section>
 
@@ -302,7 +263,7 @@
                 <h3 class="programs__content-title">Стажировки</h3>
                 <div class="programs__content-wrapper">
                   <p><span>Получите незаменимый опыт</span> работы в&nbsp;крупнейших мировых компаниях.</p>
-                  <a class="programs__content-button button button--light" href="#">
+                  <a class="programs__content-button button button--small button--light" href="#">
                     <span class="visually-hidden">Подробнее</span>
                   </a>
                 </div>
@@ -314,7 +275,7 @@
                 <h3 class="programs__content-title">Волонтёрство</h3>
                 <div class="programs__content-wrapper">
                   <p>Помогайте другим и развивайте свои лидерские качества.</p>
-                  <a class="programs__content-button button button--light" href="#">
+                  <a class="programs__content-button button button--small button--light" href="#">
                     <span class="visually-hidden">Подробнее</span>
                   </a>
                 </div>
@@ -326,7 +287,7 @@
                 <h3 class="programs__content-title">Учёба</h3>
                 <div class="programs__content-wrapper">
                   <p>Получите образование и измените своё будущее.</p>
-                  <a class="programs__content-button button button--light" href="#">
+                  <a class="programs__content-button button button--small button--light" href="#">
                     <span class="visually-hidden">Подробнее</span>
                   </a>
                 </div>
@@ -338,7 +299,7 @@
                 <h3 class="programs__content-title">Стажировки</h3>
                 <div class="programs__content-wrapper">
                   <p>Получите незаменимый опыт работы в&nbsp;крупнейших мировых компаниях.</p>
-                  <a class="programs__content-button button button--light" href="#">
+                  <a class="programs__content-button button button--small button--light" href="#">
                     <span class="visually-hidden">Подробнее</span>
                   </a>
                 </div>
@@ -350,7 +311,7 @@
                 <h3 class="programs__content-title">Волонтёрство</h3>
                 <div class="programs__content-wrapper">
                   <p>Помогайте другим и развивайте свои лидерские качества.</p>
-                  <a class="programs__content-button button button--light" href="#">
+                  <a class="programs__content-button button button--small button--light" href="#">
                     <span class="visually-hidden">Подробнее</span>
                   </a>
                 </div>
@@ -362,7 +323,7 @@
                 <h3 class="programs__content-title">Учёба</h3>
                 <div class="programs__content-wrapper">
                   <p>Получите образование и измените своё будущее.</p>
-                  <a class="programs__content-button button button--light" href="#">
+                  <a class="programs__content-button button button--small button--light" href="#">
                     <span class="visually-hidden">Подробнее</span>
                   </a>
                 </div>
@@ -467,7 +428,7 @@
             </div>
 
 
-            <div class="news__swiper-slide news__swiper-slide--сareer swiper-slide">
+            <div class="news__swiper-slide news__swiper-slide--job swiper-slide">
               <div class="news__content">
                 <p class="news__date">10/03/2023</p>
                 <h3 class="news__content-title">Построй свою карьеру</h3>
@@ -521,7 +482,7 @@
               </div>
             </div>
 
-            <div class="news__swiper-slide news__swiper-slide--сareer swiper-slide">
+            <div class="news__swiper-slide news__swiper-slide--job swiper-slide">
               <div class="news__content">
                 <p class="news__date">10/03/2023</p>
                 <h3 class="news__content-title">Построй свою карьеру</h3>
@@ -575,7 +536,7 @@
               </div>
             </div>
 
-            <div class="news__swiper-slide news__swiper-slide--сareer swiper-slide">
+            <div class="news__swiper-slide news__swiper-slide--job swiper-slide">
               <div class="news__content">
                 <p class="news__date">10/03/2023</p>
                 <h3 class="news__content-title">Построй свою карьеру</h3>
@@ -629,7 +590,7 @@
               </div>
             </div>
 
-            <div class="news__swiper-slide news__swiper-slide--сareer swiper-slide">
+            <div class="news__swiper-slide news__swiper-slide--job swiper-slide">
               <div class="news__content">
                 <p class="news__date">10/03/2023</p>
                 <h3 class="news__content-title">Построй свою карьеру</h3>
@@ -655,8 +616,14 @@
             <span class="visually-hidden">Следующий слайд.</span>
           </button>
         </div>
-
-        <div class="news__pagination"></div>
+        <div class="news__pagination-container">
+          <div class="news__pagination pagination swiper-pagination">
+            <button class="pagination__button pagination__button--active" type="button">1</button>
+            <button class="pagination__button" type="button">2</button>
+            <button class="pagination__button" type="button">3</button>
+            <button class="pagination__button" type="button">4</button>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -766,17 +733,17 @@
                       srcset="img/reviews/reviews-mobile-first@2x.jpg 2x" alt="Фотография Лолы Алекс" width="60"
                       height="60">
                   </picture>
-                  <h4 class="reviews__person-name">Лола Алекс</h4>
+                  <h3 class="reviews__person-name">Лола Алекс</h3>
                 </div>
 
                 <div class="reviews__info">
                   <div class="reviews__program">
-                    <h5 class="reviews__info-heading">Программа</h5>
+                    <h4 class="reviews__info-heading">Программа</h4>
                     <p class="reviews__info-description">Masa Art Challenge</p>
                   </div>
 
                   <div class="reviews__date">
-                    <h5 class="reviews__info-heading">Дата</h5>
+                    <h4 class="reviews__info-heading">Дата</h4>
                     <p class="reviews__info-description">Осень 2022</p>
                   </div>
                 </div>
@@ -986,24 +953,25 @@
           </div>
 
           <div class="form__input-wrapper">
-            <input class="form__field" type="text" name="name" id="name" required>
-            <label class="form__label" for="name">Имя</label>
+            <input class="form__field" type="text" name="name" id="form-name" required>
+            <label class="form__label" for="form-name">Имя</label>
           </div>
 
           <div class="form__input-wrapper">
-            <input class="form__field" type="tel" name="phone" id="phone" required>
-            <label class="form__label" for="phone">Телефон</label>
+            <input class="form__field" type="tel" name="phone" id="form-phone" required>
+            <label class="form__label" for="form-phone">Телефон</label>
           </div>
 
           <div class="form__input-wrapper">
-            <textarea class="form__field form__field--textarea" name="message" id="message" required></textarea>
-            <label class="form__label" for="message">Ваше сообщение</label>
+            <textarea class="form__field form__field--textarea" name="message" id="form-message" required></textarea>
+            <label class="form__label" for="form-message">Ваше сообщение</label>
           </div>
 
           <div class="form__select select select--form">
-            <input class="form__field select__field" id="city" name="city" type="text" minlength="2" value=" " readonly>
-            <label class="form__label" for="city">Выберите город</label>
+            <input class="form__field select__field" id="form-city" name="city" type="text" autocomplete="off" required>
+            <label class="form__label" for="form-city">Выберите город</label>
             <ul class="select__dropdown" id="select-form">
+              <li class="select__option">&nbsp;</li>
               <li class="select__option">Санкт-Петербург</li>
               <li class="select__option">Санкт-Петербург</li>
               <li class="select__option">Санкт-Петербург</li>
@@ -1011,7 +979,7 @@
             </ul>
           </div>
 
-          <label class="form__checkbox checkbox checkbox--form" for="permission-form">
+          <label class="form__checkbox checkbox checkbox--form">
             <input class="checkbox__field visually-hidden" type="checkbox" name="permission" id="permission-form"
               required>
             <span class="checkbox__check"></span>
@@ -1056,17 +1024,20 @@
       </div>
       <ul class="footer__social">
         <li class="footer__social-item">
-          <a class="footer__social-link footer__social-link--vk" href="#" target="_blank">
+          <a class="footer__social-link button footer__social-link--vk" href="https://vk.com/" target="_blank"
+            rel="noreferrer noopener">
             <span class="visually-hidden">Мы в Вконтакте.</span>
           </a>
         </li>
         <li class="footer__social-item">
-          <a class="footer__social-link footer__social-link--ok" href="#" target="_blank">
+          <a class="footer__social-link button footer__social-link--ok" href="https://ok.ru/" target="_blank"
+            rel="noreferrer noopener">
             <span class="visually-hidden">Мы в Одноклассниках.</span>
           </a>
         </li>
         <li class="footer__social-item">
-          <a class="footer__social-link footer__social-link--reddit" href="#" target="_blank">
+          <a class="footer__social-link button footer__social-link--reddit" href="https://www.reddit.com/"
+            target="_blank" rel="noreferrer noopener">
             <span class="visually-hidden">Мы в Reddit.</span>
           </a>
         </li>

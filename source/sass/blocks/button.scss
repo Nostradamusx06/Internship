@@ -3,13 +3,26 @@
   user-select: none;
   text-decoration: none;
   word-break: break-word;
+  transition: all 300ms ease;
+  outline-offset: 5px;
+
+  &:focus-visible {
+    background-color: transparent;
+  }
+}
+
+.button--small {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  outline-offset: 5px;
 }
 
 .button--light {
   &:focus-visible {
     &::after {
       transform: rotate(45deg);
-
+      transition: all 300ms ease;
       background-color: $color-default-white;
     }
   }
@@ -43,25 +56,25 @@
       background-color: $color-cerulean-blue-70;
     }
   }
+}
 
-  &:disabled,
-  &.is-disabled {
-    pointer-events: none;
+.button--light:disabled,
+.button--light.is-disabled {
+  pointer-events: none;
 
-    color: $color-mischka;
-    border-color: $color-mischka;
+  color: $color-mischka;
+  border-color: $color-mischka;
 
-    &::before {
-      color: $color-default-white;
-      background-color: $color-mischka;
-    }
+  &::before {
+    color: $color-default-white;
+    background-color: $color-mischka;
+  }
 
-    &:focus-visible {
-      outline: none;
+  &:focus-visible {
+    outline: none;
 
-      &::after {
-        transform: none;
-      }
+    &::after {
+      transform: none;
     }
   }
 }
@@ -104,25 +117,25 @@
       background-color: rgba($color-default-white, 0.7);
     }
   }
+}
 
-  &:disabled,
-  &.is-disabled {
-    pointer-events: none;
+.button--blue:disabled,
+.button--blue.is-disabled {
+  pointer-events: none;
 
-    color: $color-mischka;
-    border-color: $color-mischka;
+  color: $color-mischka;
+  border-color: $color-mischka;
 
-    &::before {
-      color: $color-default-white;
-      background-color: $color-mischka;
-    }
+  &::before {
+    color: $color-default-white;
+    background-color: $color-mischka;
+  }
 
-    &:focus-visible {
-      outline: none;
+  &:focus-visible {
+    outline: none;
 
-      &::after {
-        transform: none;
-      }
+    &::after {
+      transform: none;
     }
   }
 }
@@ -178,7 +191,7 @@
   }
 
   &:focus-visible {
-    outline: none;
+    border-radius: 30px;
 
     &::before {
       opacity: 1;
@@ -194,21 +207,22 @@
       opacity: 1;
     }
   }
+}
 
-  &:disabled,
-  &--disabled {
-    &:hover::after {
-      opacity: 1;
-    }
+.button--swiper:disabled,
+.button--swiper.is-disabled {
+  pointer-events: none;
 
-    &::after {
-      background-color: $color-mischka;
-    }
+  &:hover::after {
+    opacity: 1;
+  }
 
-    &::before {
-      opacity: 0;
-    }
+  &::after {
+    background-color: $color-mischka;
+  }
 
+  &::before {
+    opacity: 0;
   }
 }
 

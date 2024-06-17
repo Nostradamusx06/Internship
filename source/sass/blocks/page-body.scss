@@ -1,6 +1,6 @@
 .page-body {
   font-family: $manrope;
-
+  position: relative;
   min-width: $mobile-width;
   min-height: 100%;
 
@@ -12,8 +12,23 @@
     min-width: $desktop-width;
   }
 
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-black-pearl-40;
+    content: "";
+    z-index: 5;
+    display: none;
+  }
+
   &--hidden {
     overflow: hidden;
   }
-}
 
+  &--shown::before {
+    display: block;
+  }
+}

@@ -6,37 +6,12 @@
   ~.form__label-text {
     margin-bottom: 11px;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       margin-bottom: 12px;
     }
 
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       margin-bottom: 11px;
-    }
-  }
-
-  &::after {
-    position: absolute;
-    z-index: 2;
-    top: 36px;
-    right: 20px;
-
-    width: 16px;
-    height: 16px;
-
-    content: "";
-
-    mask-image: url("/__spritemap#sprite-arrow-down-view");
-    mask-repeat: no-repeat;
-    mask-position: center;
-    cursor: pointer;
-
-    @media(min-width: $tablet-width) {
-      top: 49px;
-    }
-
-    @media(min-width: $desktop-width) {
-      top: 47px;
     }
   }
 }
@@ -51,24 +26,19 @@
 
   border-radius: 8px;
   background-color: transparent;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   cursor: pointer;
   margin: 0;
 
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     width: 321px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 326px;
     height: 48px;
   }
-}
-
-.select:has(.select__field--shown)::after {
-  mask-image: url("/__spritemap#sprite-arrow-view");
 }
 
 .select__dropdown {
@@ -87,11 +57,11 @@
     display: block;
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     top: 85px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     top: 83px;
   }
 }
@@ -99,7 +69,7 @@
 
 .select__option {
   padding: 17px 20px;
-  line-height: 14px;
+  line-height: $font-line-size-rat;
   cursor: pointer;
 
   &:hover {
@@ -132,6 +102,13 @@
   .select__field {
     color: $color-charcoal;
     border: 1px solid rgba($color-charcoal, 0.3);
+    background: url("/__spritemap#sprite-arrow-black-down-view") no-repeat calc(100% - 20px) center;
+    background-size: 16px 16px;
+  }
+
+  .select__field--shown {
+    background: url("/__spritemap#sprite-arrow-black-view") no-repeat calc(100% - 20px) center;
+    background-size: 16px 16px;
   }
 
   .select__dropdown {
@@ -142,24 +119,16 @@
 }
 
 .select--form {
-  &::after {
-    background-color: $color-default-white;
-    top: 43px;
-    right: 31px;
-
-    @media(min-width: $tablet-width) {
-      top: 50px;
-      right: 21px;
-    }
-
-    @media(min-width: $desktop-width) {
-      top: 47px;
-    }
-  }
-
   .select__field {
     color: $color-default-white;
     border: 1px solid rgba($color-default-white, 0.3);
+    background: url("/__spritemap#sprite-arrow-down-view") no-repeat calc(100% - 20px) center;
+    background-size: 16px 16px;
+  }
+
+  .select__field--shown {
+    background: url("/__spritemap#sprite-arrow-view") no-repeat calc(100% - 20px) center;
+    background-size: 16px 16px;
   }
 
   .select__dropdown {

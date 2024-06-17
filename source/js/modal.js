@@ -4,7 +4,7 @@
   const submitButton = modal.querySelector('.modal__submit-button');
   const openButton = document.querySelector('.about__button');
   const closeButton = document.querySelector('.modal__close-button');
-  const overlay = document.querySelector('.header__overlay');
+  const overlay = document.querySelector('.about__overlay');
 
   const openModal = (evt) => {
     evt.preventDefault();
@@ -59,5 +59,3 @@
   modal.addEventListener('submit', onSubmit);
   submitButton.addEventListener('click', onClick);
 })();
-
-
