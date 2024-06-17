@@ -3,6 +3,7 @@
   const headerNav = document.querySelector('.header__nav');
   const headerMenuWrapper = document.querySelector('.header__menu-wrapper');
   const pageBody = document.querySelector('.page-body');
+  // const headerButtonLink = document.querySelectorAll('.header__button-link');
   const headerLinks = document.querySelectorAll('.header__link');
 
   headerButton.addEventListener('click', () => {
@@ -21,8 +22,8 @@
       headerLinks.forEach((link) => link.setAttribute('tabindex', '-1'));
     }
   });
-  document.addEventListener('click', (event) => {
-    if (event.target !== headerButton && event.target !== headerButton) {
+  document.body.addEventListener('click', (event) => {
+    if (event.target !== headerButton && !event.target.closest('.header__nav')) {
       headerNav.classList.remove('is-open');
       headerButton.classList.remove('active');
       pageBody.classList.remove('page-body--shown');
@@ -32,6 +33,7 @@
       headerLinks.forEach((link) => link.setAttribute('tabindex', '-1'));
     }
   });
+
 
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') {

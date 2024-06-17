@@ -155,8 +155,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    align-items: center;
-
     padding: 0 50px 35px;
 
     column-gap: 30px;
@@ -198,7 +196,7 @@
   }
 }
 
-.slider__content p {
+.slider__content-text p {
   font-size: $font-line-size-rat;
   line-height: $font-line-size-dog;
 
@@ -322,6 +320,10 @@
 
     border-radius: 0;
     background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
   }
 
   &::after {
