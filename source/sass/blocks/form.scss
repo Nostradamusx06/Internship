@@ -6,7 +6,7 @@
   min-height: 650px;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 71px 50px 45px;
+    padding: 50.5px 71px 50px 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -194,7 +194,7 @@
   border: 1px solid $color-default-white;
   border-radius: 30px;
   background-color: transparent;
-  margin-top: 19px;
+  margin-top: 20px;
   width: 260px;
 
   @media (min-width: $tablet-width) {
@@ -204,7 +204,7 @@
     display: inline-block;
 
 
-    margin-top: 43px;
+    margin-top: 44px;
     padding: 20px 85px 20px 35px;
     width: 352px;
     margin-right: auto;

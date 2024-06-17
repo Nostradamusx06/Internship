@@ -1,5 +1,5 @@
 .contacts {
-  padding: 76px 15px 70px;
+  padding: 75px 15px 70px;
   word-break: break-word;
   background-color: $color-cerulean-blue;
   min-height: 500px;
@@ -61,14 +61,13 @@
   justify-content: space-between;
 
   margin-bottom: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 30.5px;
 
   border-bottom: 2px solid rgba($color-default-white, 0.2);
 
   gap: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
     padding-bottom: 30px;
 
     gap: 31px;
